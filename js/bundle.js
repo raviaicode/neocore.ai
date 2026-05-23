@@ -44139,13 +44139,13 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/r
 // Mock data for portfolio website
 
 const personalInfo = {
-  name: "Alex Rivera",
+  name: "Ravi Singh",
   title: "Senior Software Engineer",
   subtitle: "FinTech Backend Architect | Enterprise Systems | DevOps & Cloud",
   bio: "Specialized in building scalable card reconciliation and payment processing systems that handle millions of transactions daily. Expert in microservices architecture, event-driven systems, and cloud-native applications.",
-  email: "alex.rivera@email.com",
-  github: "https://github.com/alexrivera",
-  linkedin: "https://linkedin.com/in/alexrivera",
+  email: "ravi.ai.core@email.com",
+  github: "https://github.com/raviaicode",
+  linkedin: "https://www.linkedin.com/in/ravi-singh-fintech/",
   resume: "/resume.pdf",
   location: "San Francisco, CA"
 };
