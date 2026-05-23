@@ -44245,7 +44245,7 @@ const projects = [{
   tech: ["Java", "Spring Boot", "Kafka", "PostgreSQL", "Redis", "Kubernetes", "AWS"],
   features: ["Real-time transaction matching", "Multi-source data aggregation", "Automated dispute resolution", "Compliance reporting dashboard"],
   architecture: "Event-driven microservices with Kafka streaming, distributed caching, and automated failover",
-  github: "https://github.com/alexrivera/card-reconciliation",
+  github: "https://github.com/raviaicode/card-reconciliation",
   demo: "https://demo.reconciliation.example.com"
 }, {
   id: 2,
@@ -44254,7 +44254,7 @@ const projects = [{
   tech: ["Java", "Spring WebFlux", "PostgreSQL", "Redis", "Docker", "AWS ECS"],
   features: ["Real-time payment processing", "Multi-currency support", "Fraud detection integration", "PCI-DSS compliance"],
   architecture: "Reactive microservices with circuit breakers, rate limiting, and distributed transactions",
-  github: "https://github.com/alexrivera/payment-api",
+  github: "https://github.com/raviaicode/payment-api",
   demo: "https://api.payments.example.com"
 }, {
   id: 3,
@@ -44263,7 +44263,7 @@ const projects = [{
   tech: ["Python", "Java", "OpenAI", "Kafka", "PostgreSQL", "Redis", "Kubernetes"],
   features: ["Real-time anomaly detection", "Behavioral pattern analysis", "Risk scoring engine", "Automated case management"],
   architecture: "Event-driven AI pipeline with streaming analytics and adaptive learning models",
-  github: "https://github.com/alexrivera/fraud-detection",
+  github: "https://github.com/raviaicode/fraud-detection",
   demo: "https://fraud.example.com"
 }, {
   id: 4,
@@ -44272,7 +44272,7 @@ const projects = [{
   tech: ["Prometheus", "Grafana", "ELK", "Jaeger", "Kubernetes", "Terraform"],
   features: ["Distributed tracing", "Custom metrics dashboards", "Automated alerting", "Performance analytics"],
   architecture: "Cloud-native observability stack with centralized logging and distributed tracing",
-  github: "https://github.com/alexrivera/k8s-observability",
+  github: "https://github.com/raviaicode/k8s-observability",
   demo: "https://monitoring.example.com"
 }, {
   id: 5,
@@ -44281,7 +44281,7 @@ const projects = [{
   tech: ["Jenkins", "GitHub Actions", "Docker", "Kubernetes", "Terraform", "ArgoCD"],
   features: ["Automated testing pipelines", "Blue-green deployments", "Infrastructure as Code", "Security scanning integration"],
   architecture: "GitOps-based deployment with automated rollbacks and progressive delivery",
-  github: "https://github.com/alexrivera/cicd-platform",
+  github: "https://github.com/raviaicode/cicd-platform",
   demo: "https://cicd.example.com"
 }];
 const experience = [{
