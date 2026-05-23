@@ -41258,11 +41258,8 @@ const Header = () => {
           "x-column": "10",
           "x-component": "a",
           "x-id": "Header_45_10",
-          "x-dynamic": "true",
-          "x-source-type": "unknown",
-          "x-source-path": "[0]",
-          "x-source-editable": "false",
-          children: _mock__WEBPACK_IMPORTED_MODULE_7__.personalInfo.name.split(' ')[0]
+          "x-dynamic": "false",
+          children: "NeoCore.ai"
         }, void 0, false, {
           fileName: _jsxFileName,
           lineNumber: 45,
@@ -44146,8 +44143,8 @@ const personalInfo = {
   email: "ravi.ai.core@email.com",
   github: "https://github.com/raviaicode",
   linkedin: "https://www.linkedin.com/in/ravi-singh-fintech/",
-  resume: "/resume.pdf",
-  location: "San Francisco, CA"
+  resume: "Ravi_singh.pdf",
+  location: "Banglore, India"
 };
 const skills = {
   backend: [{
