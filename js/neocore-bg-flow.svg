@@ -1,0 +1,414 @@
+<svg id="neocore-bg-flow" width="100%" height="100%" viewBox="0 0 1683 935" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1683" y2="935">
+      <stop offset="0%" stop-color="#020817"/>
+      <stop offset="50%" stop-color="#050d1a"/>
+      <stop offset="100%" stop-color="#01040a"/>
+    </linearGradient>
+    <linearGradient id="line-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.05"/>
+      <stop offset="30%" stop-color="#67e8f9" stop-opacity="0.8"/>
+      <stop offset="70%" stop-color="#67e8f9" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="line-green" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669" stop-opacity="0.05"/>
+      <stop offset="30%" stop-color="#34d399" stop-opacity="0.7"/>
+      <stop offset="70%" stop-color="#34d399" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#059669" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="line-white" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="40%" stop-color="#ffffff" stop-opacity="0.6"/>
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05"/>
+    </linearGradient>
+    <radialGradient id="glow-cyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#67e8f9" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#22d3ee" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-green" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#10b981" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-white" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#e2e8f0" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#e2e8f0" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur-md" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+    <filter id="blur-sm" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <filter id="glow-node" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1683" height="935" fill="url(#bg-grad)"/>
+
+  <!-- ================ LAYER 1: Background network structure (static faint lines) ================ -->
+  <g opacity="0.12">
+    <!-- Horizontal backbones -->
+    <path d="M60 135 L220 135 L460 120 L540 180 L660 45 L700 45 L780 240 L920 60 L980 225 L1040 210 L1100 165 L1180 195 L1220 60 L1340 105 L1360 225 L1400 240 L1480 180 L1500 45 L1640 60" stroke="url(#line-cyan)" stroke-width="1" fill="none"/>
+    <path d="M80 315 L120 315 L180 270 L220 315 L240 285 L280 270 L320 210 L360 285 L360 345 L420 330 L440 225 L480 240 L540 270 L620 240 L620 330 L660 465 L700 480 L720 330 L780 240 L780 300 L800 330 L840 315 L860 315 L900 210 L920 540 L940 390 L960 195 L960 315 L980 225 L980 255 L1000 390 L1020 300 L1040 210 L1080 225 L1100 510 L1120 300 L1140 225 L1140 255 L1140 480 L1180 315 L1180 450 L1200 420 L1220 225 L1260 400 L1360 225 L1380 330 L1400 240 L1400 280 L1520 240 L1540 400 L1580 435 L1600 240 L1600 300 L1640 300" stroke="url(#line-green)" stroke-width="1" fill="none"/>
+    <path d="M140 200 L200 45 L240 60 L280 210 L320 210 L360 345 L420 330 L420 600 L440 225 L460 120 L460 165 L540 180 L540 270 L560 120 L560 200 L580 150 L620 240 L640 210 L660 45 L660 465 L700 45 L700 165 L700 435 L700 480 L720 330 L780 240 L780 300 L780 600 L800 330 L840 315 L840 420 L860 315 L880 660 L900 210 L920 60 L920 255 L920 540 L940 390 L960 195 L960 315 L980 225 L980 255 L980 620 L1000 390 L1020 300 L1040 210 L1080 225 L1100 165 L1100 510 L1120 300 L1140 225 L1140 255 L1140 450 L1140 480 L1180 195 L1180 315 L1180 450 L1200 420 L1220 60 L1220 225 L1260 400 L1320 180 L1340 105 L1360 225 L1360 285 L1380 330 L1400 240 L1400 280 L1400 560 L1480 180 L1500 45 L1520 240 L1540 400 L1580 435 L1600 240 L1600 300 L1640 60 L1640 300" stroke="url(#line-white)" stroke-width="0.8" fill="none"/>
+  </g>
+
+  <!-- ================ LAYER 2: Network grid structure ================ -->
+  <g opacity="0.08">
+    <path d="M220 135 L220 315" stroke="#67e8f9" stroke-width="0.5" fill="none"/>
+    <path d="M360 285 L360 390" stroke="#34d399" stroke-width="0.5" fill="none"/>
+    <path d="M540 180 L540 310" stroke="#67e8f9" stroke-width="0.5" fill="none"/>
+    <path d="M700 165 L700 480" stroke="#ffffff" stroke-width="0.5" fill="none"/>
+    <path d="M780 240 L780 600" stroke="#67e8f9" stroke-width="0.5" fill="none"/>
+    <path d="M980 225 L980 620" stroke="#34d399" stroke-width="0.5" fill="none"/>
+    <path d="M1180 195 L1180 480" stroke="#ffffff" stroke-width="0.5" fill="none"/>
+    <path d="M1400 240 L1400 560" stroke="#67e8f9" stroke-width="0.5" fill="none"/>
+  </g>
+
+  <!-- ================ LAYER 3: Animated flow paths ================ -->
+
+  <!-- Path 1: Top-left spine -->
+  <g>
+    <path id="f1" d="M220 135 L460 120 L540 180 L580 150 L660 45" stroke="url(#line-cyan)" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-dasharray="800">
+      <animate attributeName="stroke-dashoffset" values="800;0" dur="6s" repeatCount="indefinite"/>
+    </path>
+    <circle r="3" fill="#67e8f9" filter="url(#glow-node)">
+      <animateMotion dur="6s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#f1"/>
+      </animateMotion>
+    </circle>
+  </g>
+
+  <!-- Path 2: Top-right spine -->
+  <g>
+    <path id="f2" d="M1500 45 L1480 180 L1400 240 L1360 225 L1340 105" stroke="url(#line-green)" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-dasharray="800">
+      <animate attributeName="stroke-dashoffset" values="800;0" dur="7s" repeatCount="indefinite"/>
+    </path>
+    <circle r="3" fill="#34d399" filter="url(#glow-node)">
+      <animateMotion dur="7s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#f2"/>
+      </animateMotion>
+    </circle>
+  </g>
+
+  <!-- Path 3: Upper horizontal band -->
+  <g>
+    <path id="f3" d="M60 135 L220 135 L320 210 L440 225 L540 270 L620 240 L780 240 L900 210 L980 225 L1040 210 L1180 195 L1340 105 L1400 240 L1480 180 L1640 60" stroke="url(#line-white)" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-dasharray="2000">
+      <animate attributeName="stroke-dashoffset" values="2000;0" dur="14s" repeatCount="indefinite"/>
+    </path>
+    <circle r="2.5" fill="#ffffff" filter="url(#glow-node)">
+      <animateMotion dur="14s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#f3"/>
+      </animateMotion>
+    </circle>
+  </g>
+
+  <!-- Path 4: Central left-to-right flow -->
+  <g>
+    <path id="f4" d="M80 315 L180 270 L280 270 L360 285 L460 165 L540 270 L620 330 L720 330 L780 300 L860 315 L960 315 L1020 300 L1120 300 L1180 315 L1260 400 L1360 285 L1400 280 L1540 400 L1580 435" stroke="url(#line-cyan)" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-dasharray="2500">
+      <animate attributeName="stroke-dashoffset" values="2500;0" dur="18s" repeatCount="indefinite"/>
+    </path>
+    <circle r="3" fill="#67e8f9" filter="url(#glow-node)">
+      <animateMotion dur="18s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#f4"/>
+      </animateMotion>
+    </circle>
+  </g>
+
+  <!-- Path 5: Center vertical cluster -->
+  <g>
+    <path id="f5" d="M540 270 L620 330 L700 435 L780 300 L800 330 L840 315 L920 540 L980 620 L1100 510 L1140 480 L1180 450" stroke="url(#line-green)" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-dasharray="1800">
+      <animate attributeName="stroke-dashoffset" values="1800;0" dur="12s" repeatCount="indefinite"/>
+    </path>
+    <circle r="2.5" fill="#34d399" filter="url(#glow-node)">
+      <animateMotion dur="12s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#f5"/>
+      </animateMotion>
+    </circle>
+  </g>
+
+  <!-- Path 6: Center-right vertical flow -->
+  <g>
+    <path id="f6" d="M920 60 L980 225 L1000 390 L1100 510 L1140 480 L1180 450 L1200 420 L1260 400 L1360 285 L1380 330 L1400 560 L1580 435" stroke="url(#line-cyan)" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-dasharray="2000">
+      <animate attributeName="stroke-dashoffset" values="2000;0" dur="15s" repeatCount="indefinite"/>
+    </path>
+    <circle r="2.5" fill="#67e8f9" filter="url(#glow-node)">
+      <animateMotion dur="15s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#f6"/>
+      </animateMotion>
+    </circle>
+  </g>
+
+  <!-- Path 7: Bottom flow -->
+  <g>
+    <path id="f7" d="M420 600 L560 200 L700 480 L780 600 L880 660 L920 540 L980 620 L1100 510 L1140 480 L1260 400 L1400 560" stroke="url(#line-green)" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-dasharray="2200">
+      <animate attributeName="stroke-dashoffset" values="2200;0" dur="16s" repeatCount="indefinite"/>
+    </path>
+    <circle r="2.5" fill="#34d399" filter="url(#glow-node)">
+      <animateMotion dur="16s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#f7"/>
+      </animateMotion>
+    </circle>
+  </g>
+
+  <!-- Path 8: Dense center hub connections with fast dash animation -->
+  <g>
+    <path d="M660 465 L700 480 L720 330 L840 315 L860 315 L940 390 L960 315 L1020 300 L1120 300 L1140 255" stroke="url(#line-white)" stroke-width="1" fill="none" stroke-linecap="round" stroke-dasharray="5 8">
+      <animate attributeName="stroke-dashoffset" values="0;-26" dur="1.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <g>
+    <path d="M620 240 L660 465 L700 435 L720 330 L780 300 L800 330 L840 315 L920 540 L940 390 L960 315 L980 255 L1000 390" stroke="url(#line-cyan)" stroke-width="1" fill="none" stroke-linecap="round" stroke-dasharray="4 6">
+      <animate attributeName="stroke-dashoffset" values="0;20" dur="1.8s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <g>
+    <path d="M780 600 L880 660 L920 540 L980 620 L1100 510 L1140 480 L1140 450 L1180 450 L1200 420 L1260 400" stroke="url(#line-green)" stroke-width="1" fill="none" stroke-linecap="round" stroke-dasharray="4 7">
+      <animate attributeName="stroke-dashoffset" values="0;22" dur="2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- ================ LAYER 4: Glowing nodes ================ -->
+
+  <!-- Major hub nodes (bright white centers with cyan/green glow) -->
+  <g filter="url(#blur-md)">
+    <!-- Dense center cluster -->
+    <circle cx="780" cy="240" r="22" fill="url(#glow-white)">
+      <animate attributeName="r" values="22;30;22" dur="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="540" cy="270" r="20" fill="url(#glow-cyan)">
+      <animate attributeName="r" values="20;27;20" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1180" cy="315" r="22" fill="url(#glow-cyan)">
+      <animate attributeName="r" values="22;30;22" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="360" cy="345" r="18" fill="url(#glow-green)">
+      <animate attributeName="r" values="18;25;18" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1000" cy="390" r="18" fill="url(#glow-cyan)">
+      <animate attributeName="r" values="18;25;18" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="660" cy="465" r="16" fill="url(#glow-green)">
+      <animate attributeName="r" values="16;23;16" dur="3.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="700" cy="480" r="20" fill="url(#glow-white)">
+      <animate attributeName="r" values="20;28;20" dur="2.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1180" cy="450" r="17" fill="url(#glow-cyan)">
+      <animate attributeName="r" values="17;24;17" dur="3.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1140" cy="480" r="19" fill="url(#glow-white)">
+      <animate attributeName="r" values="19;27;19" dur="2.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="780" cy="600" r="18" fill="url(#glow-white)">
+      <animate attributeName="r" values="18;26;18" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Mid-size nodes -->
+    <circle cx="220" cy="135" r="14" fill="url(#glow-cyan)">
+      <animate attributeName="r" values="14;20;14" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1480" cy="180" r="13" fill="url(#glow-cyan)">
+      <animate attributeName="r" values="13;19;13" dur="2.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1040" cy="210" r="14" fill="url(#glow-white)">
+      <animate attributeName="r" values="14;20;14" dur="3.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="980" cy="225" r="15" fill="url(#glow-white)">
+      <animate attributeName="r" values="15;21;15" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1400" cy="240" r="15" fill="url(#glow-white)">
+      <animate attributeName="r" values="15;21;15" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="80" cy="315" r="12" fill="url(#glow-green)">
+      <animate attributeName="r" values="12;18;12" dur="3.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="120" cy="315" r="14" fill="url(#glow-white)">
+      <animate attributeName="r" values="14;20;14" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="420" cy="330" r="13" fill="url(#glow-cyan)">
+      <animate attributeName="r" values="13;19;13" dur="3.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="720" cy="330" r="13" fill="url(#glow-cyan)">
+      <animate attributeName="r" values="13;19;13" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="940" cy="390" r="14" fill="url(#glow-cyan)">
+      <animate attributeName="r" values="14;20;14" dur="3.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1200" cy="420" r="12" fill="url(#glow-cyan)">
+      <animate attributeName="r" values="12;18;12" dur="2.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1100" cy="510" r="13" fill="url(#glow-green)">
+      <animate attributeName="r" values="13;19;13" dur="3.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="920" cy="540" r="14" fill="url(#glow-white)">
+      <animate attributeName="r" values="14;20;14" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="880" cy="660" r="12" fill="url(#glow-green)">
+      <animate attributeName="r" values="12;18;12" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1580" cy="435" r="11" fill="url(#glow-white)">
+      <animate attributeName="r" values="11;17;11" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- ================ LAYER 5: Node cores (bright centers) ================ -->
+
+  <g filter="url(#glow-node)">
+    <!-- Bright cores -->
+    <circle cx="780" cy="240" r="4" fill="#ffffff">
+      <animate attributeName="r" values="4;6;4" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="700" cy="480" r="3.5" fill="#ffffff">
+      <animate attributeName="r" values="3.5;5.5;3.5" dur="2.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1140" cy="480" r="3.5" fill="#ffffff">
+      <animate attributeName="r" values="3.5;5.5;3.5" dur="2.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="780" cy="600" r="3" fill="#ffffff">
+      <animate attributeName="r" values="3;5;3" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="980" cy="225" r="3" fill="#ffffff">
+      <animate attributeName="r" values="3;5;3" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1400" cy="240" r="3" fill="#ffffff">
+      <animate attributeName="r" values="3;5;3" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1180" cy="315" r="3.5" fill="#67e8f9">
+      <animate attributeName="r" values="3.5;5.5;3.5" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="540" cy="270" r="3" fill="#67e8f9">
+      <animate attributeName="r" values="3;5;3" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="360" cy="345" r="2.5" fill="#34d399">
+      <animate attributeName="r" values="2.5;4.5;2.5" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1000" cy="390" r="3" fill="#67e8f9">
+      <animate attributeName="r" values="3;5;3" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="920" cy="540" r="2.5" fill="#ffffff">
+      <animate attributeName="r" values="2.5;4.5;2.5" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- ================ LAYER 6: Small static nodes (dots) ================ -->
+
+  <g opacity="0.5">
+    <circle cx="120" cy="180" r="1.5" fill="#34d399"/>
+    <circle cx="200" cy="45" r="1.5" fill="#ffffff"/>
+    <circle cx="240" cy="60" r="1.2" fill="#67e8f9"/>
+    <circle cx="240" cy="285" r="1.5" fill="#34d399"/>
+    <circle cx="280" cy="210" r="2" fill="#ffffff"/>
+    <circle cx="320" cy="210" r="1.5" fill="#67e8f9"/>
+    <circle cx="440" cy="255" r="1.5" fill="#67e8f9"/>
+    <circle cx="440" cy="225" r="2" fill="#ffffff"/>
+    <circle cx="460" cy="165" r="1.5" fill="#34d399"/>
+    <circle cx="480" cy="240" r="1.5" fill="#34d399"/>
+    <circle cx="560" cy="120" r="1.5" fill="#ffffff"/>
+    <circle cx="560" cy="200" r="1.5" fill="#34d399"/>
+    <circle cx="620" cy="240" r="2" fill="#ffffff"/>
+    <circle cx="620" cy="330" r="1.5" fill="#ffffff"/>
+    <circle cx="640" cy="210" r="1.5" fill="#67e8f9"/>
+    <circle cx="700" cy="165" r="1.5" fill="#34d399"/>
+    <circle cx="700" cy="435" r="1.5" fill="#67e8f9"/>
+    <circle cx="800" cy="330" r="1.5" fill="#ffffff"/>
+    <circle cx="840" cy="315" r="2" fill="#ffffff"/>
+    <circle cx="860" cy="315" r="1.5" fill="#67e8f9"/>
+    <circle cx="900" cy="210" r="2" fill="#ffffff"/>
+    <circle cx="960" cy="195" r="1.5" fill="#67e8f9"/>
+    <circle cx="960" cy="315" r="1.5" fill="#ffffff"/>
+    <circle cx="980" cy="255" r="1.5" fill="#ffffff"/>
+    <circle cx="1020" cy="300" r="1.5" fill="#ffffff"/>
+    <circle cx="1080" cy="225" r="1.5" fill="#ffffff"/>
+    <circle cx="1120" cy="300" r="1.5" fill="#34d399"/>
+    <circle cx="1140" cy="255" r="1.5" fill="#ffffff"/>
+    <circle cx="1140" cy="450" r="1.5" fill="#67e8f9"/>
+    <circle cx="1180" cy="195" r="1.5" fill="#67e8f9"/>
+    <circle cx="1220" cy="60" r="1.2" fill="#34d399"/>
+    <circle cx="1220" cy="225" r="2" fill="#ffffff"/>
+    <circle cx="1260" cy="400" r="1.5" fill="#67e8f9"/>
+    <circle cx="1320" cy="180" r="1.2" fill="#34d399"/>
+    <circle cx="1360" cy="225" r="2" fill="#ffffff"/>
+    <circle cx="1360" cy="285" r="1.5" fill="#67e8f9"/>
+    <circle cx="1380" cy="330" r="1.5" fill="#ffffff"/>
+    <circle cx="1520" cy="240" r="1.5" fill="#34d399"/>
+    <circle cx="1540" cy="400" r="1.5" fill="#67e8f9"/>
+    <circle cx="1600" cy="240" r="1.5" fill="#34d399"/>
+    <circle cx="1600" cy="300" r="1.5" fill="#34d399"/>
+    <circle cx="1640" cy="60" r="1.2" fill="#34d399"/>
+    <circle cx="1640" cy="300" r="1.5" fill="#67e8f9"/>
+  </g>
+
+  <!-- ================ LAYER 7: Animated rings around major hubs ================ -->
+
+  <!-- Expanding ring around 780,240 -->
+  <circle cx="780" cy="240" r="30" stroke="#ffffff" stroke-width="0.6" fill="none" opacity="0.4">
+    <animate attributeName="r" values="25;50;25" dur="3.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0;0.4" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Expanding ring around 1180,315 -->
+  <circle cx="1180" cy="315" r="30" stroke="#67e8f9" stroke-width="0.6" fill="none" opacity="0.3">
+    <animate attributeName="r" values="28;55;28" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0;0.3" dur="4s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Expanding ring around 700,480 -->
+  <circle cx="700" cy="480" r="25" stroke="#ffffff" stroke-width="0.5" fill="none" opacity="0.3">
+    <animate attributeName="r" values="22;45;22" dur="3.8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0;0.3" dur="3.8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Expanding ring around 780,600 -->
+  <circle cx="780" cy="600" r="25" stroke="#ffffff" stroke-width="0.5" fill="none" opacity="0.3">
+    <animate attributeName="r" values="20;42;20" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0;0.3" dur="4.2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Scattered tiny particles -->
+  <g opacity="0.3">
+    <circle cx="100" cy="90" r="1" fill="#67e8f9"/>
+    <circle cx="160" cy="250" r="0.8" fill="#34d399"/>
+    <circle cx="340" cy="180" r="1" fill="#ffffff"/>
+    <circle cx="400" cy="260" r="0.8" fill="#67e8f9"/>
+    <circle cx="500" cy="350" r="1" fill="#34d399"/>
+    <circle cx="600" cy="150" r="0.8" fill="#ffffff"/>
+    <circle cx="680" cy="200" r="1" fill="#67e8f9"/>
+    <circle cx="760" cy="350" r="0.8" fill="#34d399"/>
+    <circle cx="820" cy="450" r="1" fill="#ffffff"/>
+    <circle cx="900" cy="300" r="0.8" fill="#67e8f9"/>
+    <circle cx="1050" cy="480" r="1" fill="#34d399"/>
+    <circle cx="1150" cy="350" r="0.8" fill="#ffffff"/>
+    <circle cx="1250" cy="250" r="1" fill="#67e8f9"/>
+    <circle cx="1300" cy="350" r="0.8" fill="#34d399"/>
+    <circle cx="1420" cy="180" r="1" fill="#ffffff"/>
+    <circle cx="1450" cy="320" r="0.8" fill="#67e8f9"/>
+    <circle cx="1550" cy="250" r="1" fill="#34d399"/>
+    <circle cx="1620" cy="400" r="0.8" fill="#ffffff"/>
+    <circle cx="1660" cy="150" r="1" fill="#67e8f9"/>
+    <circle cx="300" cy="500" r="0.8" fill="#34d399"/>
+    <circle cx="480" cy="550" r="1" fill="#ffffff"/>
+    <circle cx="600" cy="520" r="0.8" fill="#67e8f9"/>
+    <circle cx="820" cy="700" r="1" fill="#34d399"/>
+    <circle cx="1000" cy="680" r="0.8" fill="#ffffff"/>
+    <circle cx="1200" cy="600" r="1" fill="#67e8f9"/>
+    <circle cx="1350" cy="650" r="0.8" fill="#34d399"/>
+    <circle cx="1500" cy="500" r="1" fill="#ffffff"/>
+    <circle cx="1650" cy="650" r="0.8" fill="#67e8f9"/>
+  </g>
+</svg>

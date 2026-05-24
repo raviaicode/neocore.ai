@@ -1,0 +1,80 @@
+<!--
+  NeoCore.ai Animated World Map SVG Background
+  - World map silhouette
+  - Animated glowing dots (nodes)
+  - Animated network lines
+  - Neon blue/green fintech style
+-->
+<svg id="neocore-map-bg" width="100%" height="100%" viewBox="0 0 1440 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030712"/>
+      <stop offset="100%" stop-color="#02131d"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#67e8f9" stop-opacity="1"/>
+      <stop offset="80%" stop-color="#22d3ee" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-green" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="1"/>
+      <stop offset="80%" stop-color="#10b981" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="line" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#67e8f9"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <filter id="blur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <!-- Background gradient -->
+  <rect width="1440" height="800" fill="url(#bg-grad)"/>
+
+  <!-- World map silhouette (simplified, low opacity) -->
+  <g opacity="0.13">
+    <path d="M180 400 Q 300 320 500 350 Q 700 380 900 320 Q 1100 260 1260 400 Q 1300 440 1200 500 Q 1100 560 900 520 Q 700 480 500 520 Q 300 560 180 400 Z" fill="#67e8f9"/>
+    <ellipse cx="900" cy="320" rx="180" ry="60" fill="#34d399"/>
+    <ellipse cx="500" cy="350" rx="120" ry="40" fill="#22d3ee"/>
+  </g>
+
+  <!-- Animated network lines -->
+  <g opacity="0.7">
+    <path d="M320 420 Q 500 300 700 400 Q 900 500 1120 360" stroke="url(#line)" stroke-width="2.5" fill="none" stroke-linecap="round">
+      <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M400 600 Q 600 500 900 600 Q 1200 700 1300 500" stroke="url(#line)" stroke-width="2" fill="none" stroke-linecap="round">
+      <animate attributeName="stroke-opacity" values="0.3;0.8;0.3" dur="5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M600 200 Q 800 100 1100 200 Q 1300 300 1200 400" stroke="url(#line)" stroke-width="2" fill="none" stroke-linecap="round">
+      <animate attributeName="stroke-opacity" values="0.2;0.7;0.2" dur="6s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Animated glowing dots (nodes) -->
+  <g filter="url(#blur)">
+    <circle cx="320" cy="420" r="16" fill="url(#glow)">
+      <animate attributeName="r" values="16;22;16" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="700" cy="400" r="14" fill="url(#glow-green)">
+      <animate attributeName="r" values="14;20;14" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="900" cy="320" r="18" fill="url(#glow)">
+      <animate attributeName="r" values="18;24;18" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1120" cy="360" r="13" fill="url(#glow-green)">
+      <animate attributeName="r" values="13;19;13" dur="2.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="600" r="12" fill="url(#glow)">
+      <animate attributeName="r" values="12;18;12" dur="2.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="900" cy="600" r="15" fill="url(#glow-green)">
+      <animate attributeName="r" values="15;21;15" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1200" cy="400" r="13" fill="url(#glow)">
+      <animate attributeName="r" values="13;19;13" dur="2.3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
