@@ -1,9 +1,8 @@
-# 👋 Hi, I'm Ravi Singh
+## 📫 Connect with Me
 
-Senior Software Engineer | Java | Spring Boot | Microservices | AWS
-
-🌐 **Portfolio:** https://your-portfolio-url.com
-
-💼 **LinkedIn:** https://linkedin.com/in/your-profile
-
-📧 **Email:** your.email@example.com
+- 🌐 **Portfolio:** https://raviaicode.github.io/neocore.ai/
+- 💼 **LinkedIn:** https://linkedin.com/in/ravi-singh-fintech
+- 💻 **GitHub:** https://github.com/raviaicode
+- 📧 **Email:** ravi.ai.code@gmail.com
+- 📱 **Phone:** +91 86198 25428
+- 📍 **Location:** Bengaluru, India
