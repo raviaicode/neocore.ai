@@ -41687,33 +41687,7 @@ const Hero = () => {
         "x-component": "div",
         "x-id": "Hero_16_8",
         "x-dynamic": "false",
-        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("div", {
-          className: "inline-block",
-          "x-file-name": "Hero",
-          "x-line-number": "18",
-          "x-column": "10",
-          "x-component": "div",
-          "x-id": "Hero_18_10",
-          "x-dynamic": "false",
-          children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("span", {
-            className: "px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full text-emerald-400 text-sm font-medium",
-            "x-file-name": "Hero",
-            "x-line-number": "19",
-            "x-column": "12",
-            "x-component": "span",
-            "x-id": "Hero_19_12",
-            "x-dynamic": "false",
-            children: "Welcome"
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 19,
-            columnNumber: 13
-          }, undefined)
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 18,
-          columnNumber: 11
-        }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("h1", {
+        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("h1", {
           className: "text-5xl sm:text-6xl lg:text-7xl font-bold",
           "x-file-name": "Hero",
           "x-line-number": "25",
@@ -44053,7 +44027,7 @@ const personalInfo = {
   email: "ravi.ai.code@gmail.com",
   github: "https://github.com/raviaicode",
   linkedin: "https://www.linkedin.com/in/ravi-singh-fintech/",
-  resume: "Ravi_singh.pdf",
+  resume: "ravi-singh-resume.pdf",
   location: "Bengaluru, India"
 };
 const skills = {
