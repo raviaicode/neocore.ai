@@ -37594,18 +37594,6 @@ function App() {
       fileName: _jsxFileName,
       lineNumber: 28,
       columnNumber: 7
-    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxDEV)(_components_Certifications__WEBPACK_IMPORTED_MODULE_11__.Certifications, {
-      "x-file-name": "App",
-      "x-line-number": "29",
-      "x-column": "6",
-      "x-component": "Certifications",
-      "x-id": "App_29_6",
-      "x-dynamic": "true",
-      "x-excluded": "true"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 29,
-      columnNumber: 7
     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxDEV)(_components_Contact__WEBPACK_IMPORTED_MODULE_12__.Contact, {
       "x-file-name": "App",
       "x-line-number": "30",
@@ -37758,7 +37746,7 @@ const AIIntegration = () => {
             "x-component": "span",
             "x-id": "AIIntegration_15_12",
             "x-dynamic": "false",
-            children: "AI Integration"
+            children: "AI-Assisted Engineering"
           }, void 0, false, {
             fileName: _jsxFileName,
             lineNumber: 15,
@@ -37776,7 +37764,7 @@ const AIIntegration = () => {
           "x-component": "p",
           "x-id": "AIIntegration_19_10",
           "x-dynamic": "false",
-          children: "Leveraging AI to build intelligent, automated systems"
+          children: "Practical AI workflows with clear guardrails and human review"
         }, void 0, false, {
           fileName: _jsxFileName,
           lineNumber: 19,
@@ -38093,20 +38081,20 @@ var _jsxFileName = "/app/frontend/src/components/About.jsx";
 const About = () => {
   const highlights = [{
     icon: lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"],
-    title: "FinTech Expertise",
-    description: "8+ years building enterprise banking and payment processing systems handling billions in daily transaction volume."
+    title: "FinTech & Payments",
+    description: "9+ years building reconciliation, core-banking, and PCI-DSS payment-security platforms for banking and fintech clients."
   }, {
     icon: lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"],
-    title: "Backend Architecture",
-    description: "Designed and deployed scalable microservices architectures with event-driven patterns and distributed systems."
+    title: "Performance Engineering",
+    description: "Re-engineered a 10M-record reconciliation workflow from 30 minutes to 4 minutes - a measured 7.5x speedup."
   }, {
     icon: lucide_react__WEBPACK_IMPORTED_MODULE_1__["default"],
-    title: "DevOps & Cloud",
-    description: "Expert in containerization, Kubernetes orchestration, CI/CD pipelines, and multi-cloud infrastructure."
+    title: "Secure Multi-Cloud",
+    description: "Delivered PCI-DSS tokenization and cryptographic key lifecycle solutions across OCI, AWS, GCP, and Azure."
   }, {
     icon: lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"],
-    title: "AI Integration",
-    description: "Integrated AI-powered fraud detection and intelligent automation systems that drive business value."
+    title: "Technical Leadership",
+    description: "Leads a 9-engineer team and owns production delivery, migrations, monitoring, and incident response for banking clients."
   }];
   return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("section", {
     id: "about",
@@ -38167,7 +38155,7 @@ const About = () => {
           "x-component": "p",
           "x-id": "About_39_10",
           "x-dynamic": "false",
-          children: "Senior engineer specializing in high-performance fintech systems"
+          children: "Building secure, high-performance fintech platforms with measurable business impact"
         }, void 0, false, {
           fileName: _jsxFileName,
           lineNumber: 39,
@@ -38574,7 +38562,7 @@ const Architecture = () => {
             "x-component": "span",
             "x-id": "Architecture_15_12",
             "x-dynamic": "false",
-            children: "System Architecture"
+            children: "Engineering Highlights"
           }, void 0, false, {
             fileName: _jsxFileName,
             lineNumber: 15,
@@ -38592,7 +38580,7 @@ const Architecture = () => {
           "x-component": "p",
           "x-id": "Architecture_19_10",
           "x-dynamic": "false",
-          children: "Building scalable, resilient, and distributed systems"
+          children: "Selected architecture work from secure, high-volume fintech platforms"
         }, void 0, false, {
           fileName: _jsxFileName,
           lineNumber: 19,
@@ -39284,8 +39272,6 @@ var _jsxFileName = "/app/frontend/src/components/Contact.jsx",
 
 
 
-const BACKEND_URL = "https://devops-fintech-core.preview.emergentagent.com";
-const API = `${BACKEND_URL}/api`;
 const Contact = () => {
   _s();
   const [formData, setFormData] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
@@ -39294,30 +39280,17 @@ const Contact = () => {
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
-  const handleSubmit = async e => {
+  const handleSubmit = e => {
     e.preventDefault();
     setIsSubmitting(true);
-    try {
-      const response = await axios__WEBPACK_IMPORTED_MODULE_11__["default"].post(`${API}/contact`, formData);
-      if (response.data.success) {
-        sonner__WEBPACK_IMPORTED_MODULE_10__.toast.success('Message sent!', {
-          description: "Thank you for reaching out. I'll get back to you soon."
-        });
-        setFormData({
-          name: '',
-          email: '',
-          message: ''
-        });
-      }
-    } catch (error) {
-      var _error$response, _error$response$data;
-      console.error('Error sending message:', error);
-      sonner__WEBPACK_IMPORTED_MODULE_10__.toast.error('Error', {
-        description: ((_error$response = error.response) === null || _error$response === void 0 ? void 0 : (_error$response$data = _error$response.data) === null || _error$response$data === void 0 ? void 0 : _error$response$data.detail) || 'Failed to send message. Please try again.'
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
+    const subject = `Portfolio enquiry from ${formData.name}`;
+    const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`;
+    const composeUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(_mock__WEBPACK_IMPORTED_MODULE_9__.personalInfo.email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.open(composeUrl, '_blank', 'noopener,noreferrer');
+    sonner__WEBPACK_IMPORTED_MODULE_10__.toast.success('Email draft opened', {
+      description: 'Review the message in Gmail and press Send.'
+    });
+    setIsSubmitting(false);
   };
   const handleChange = e => {
     setFormData({
@@ -39859,7 +39832,7 @@ const Contact = () => {
                   fileName: _jsxFileName,
                   lineNumber: 158,
                   columnNumber: 19
-                }, undefined), isSubmitting ? 'Sending...' : 'Send Message']
+                }, undefined), isSubmitting ? 'Opening Gmail...' : 'Send via Gmail']
               }, void 0, true, {
                 fileName: _jsxFileName,
                 lineNumber: 153,
@@ -40008,7 +39981,7 @@ const DevOps = () => {
             "x-component": "span",
             "x-id": "DevOps_15_12",
             "x-dynamic": "false",
-            children: "DevOps & Cloud"
+            children: "Production & Delivery"
           }, void 0, false, {
             fileName: _jsxFileName,
             lineNumber: 15,
@@ -40026,7 +39999,7 @@ const DevOps = () => {
           "x-component": "p",
           "x-id": "DevOps_19_10",
           "x-dynamic": "false",
-          children: "Infrastructure automation and cloud-native deployments"
+          children: "Secure multi-cloud delivery, observability, and operational ownership"
         }, void 0, false, {
           fileName: _jsxFileName,
           lineNumber: 19,
@@ -41242,29 +41215,14 @@ const Header = () => {
       "x-id": "Header_43_6",
       "x-dynamic": "false",
       children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
-        className: "flex justify-between items-center h-16",
+        className: "flex justify-end items-center gap-8 h-16",
         "x-file-name": "Header",
         "x-line-number": "44",
         "x-column": "8",
         "x-component": "div",
         "x-id": "Header_44_8",
         "x-dynamic": "false",
-        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("a", {
-          href: "#hero",
-          onClick: e => scrollToSection(e, '#hero'),
-          className: "text-xl font-bold bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent hover:from-emerald-300 hover:to-cyan-300 transition-all duration-300",
-          "x-file-name": "Header",
-          "x-line-number": "45",
-          "x-column": "10",
-          "x-component": "a",
-          "x-id": "Header_45_10",
-          "x-dynamic": "false",
-          children: "NeoCore.ai"
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 45,
-          columnNumber: 11
-        }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("nav", {
+        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("nav", {
           className: "hidden md:flex items-center gap-8",
           "x-file-name": "Header",
           "x-line-number": "54",
@@ -42294,54 +42252,6 @@ const Projects = () => {
                   fileName: _jsxFileName,
                   lineNumber: 40,
                   columnNumber: 21
-                }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)(_ui_button__WEBPACK_IMPORTED_MODULE_2__.Button, {
-                  variant: "ghost",
-                  size: "icon",
-                  className: "text-zinc-400 hover:text-cyan-400 hover:bg-cyan-400/10",
-                  onClick: () => window.open(project.demo, '_blank'),
-                  "x-file-name": "Projects",
-                  "x-line-number": "48",
-                  "x-column": "20",
-                  "x-component": "Button",
-                  "x-id": "Projects_48_20",
-                  "x-dynamic": "true",
-                  "x-source-type": "static-imported",
-                  "x-source-var": "projects",
-                  "x-source-file": "../mock",
-                  "x-source-file-abs": "/app/frontend/src/mock.js",
-                  "x-source-line": "58",
-                  "x-source-editable": "true",
-                  "x-array-var": "projects",
-                  "x-array-file": "../mock",
-                  "x-array-line": "58",
-                  "x-array-item-param": "project",
-                  children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
-                    className: "h-5 w-5",
-                    "x-file-name": "Projects",
-                    "x-line-number": "54",
-                    "x-column": "22",
-                    "x-component": "ExternalLink",
-                    "x-id": "Projects_54_22",
-                    "x-dynamic": "true",
-                    "x-source-type": "static-imported",
-                    "x-source-var": "projects",
-                    "x-source-file": "../mock",
-                    "x-source-file-abs": "/app/frontend/src/mock.js",
-                    "x-source-line": "58",
-                    "x-source-editable": "true",
-                    "x-array-var": "projects",
-                    "x-array-file": "../mock",
-                    "x-array-line": "58",
-                    "x-array-item-param": "project"
-                  }, void 0, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 54,
-                    columnNumber: 23
-                  }, undefined)
-                }, void 0, false, {
-                  fileName: _jsxFileName,
-                  lineNumber: 48,
-                  columnNumber: 21
                 }, undefined)]
               }, void 0, true, {
                 fileName: _jsxFileName,
@@ -42776,7 +42686,7 @@ const Skills = () => {
           "x-component": "p",
           "x-id": "Skills_25_10",
           "x-dynamic": "false",
-          children: "Comprehensive expertise across the modern tech stack"
+          children: "Technologies used across production systems and public engineering projects"
         }, void 0, false, {
           fileName: _jsxFileName,
           lineNumber: 25,
@@ -44137,14 +44047,14 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/r
 
 const personalInfo = {
   name: "Ravi Singh",
-  title: "Senior Software Engineer",
-  subtitle: "FinTech Backend Architect | Enterprise Systems | DevOps & Cloud",
-  bio: "Specialized in building scalable card reconciliation and payment processing systems that handle millions of transactions daily. Expert in microservices architecture, event-driven systems, and cloud-native applications.",
-  email: "ravi.ai.core@email.com",
+  title: "Senior Java Engineer & Tech Lead",
+  subtitle: "FinTech & Payments | PCI-DSS Security | Multi-Cloud Platforms",
+  bio: "Java backend engineer with 9+ years in fintech, reconciliation, core banking, and payment security. I build high-volume systems, lead production delivery for banking clients, and turn complex workflows into measurable performance gains.",
+  email: "ravi.ai.code@gmail.com",
   github: "https://github.com/raviaicode",
   linkedin: "https://www.linkedin.com/in/ravi-singh-fintech/",
   resume: "Ravi_singh.pdf",
-  location: "Banglore, India"
+  location: "Bengaluru, India"
 };
 const skills = {
   backend: [{
@@ -44160,8 +44070,8 @@ const skills = {
     name: "REST APIs",
     level: 95
   }, {
-    name: "GraphQL",
-    level: 80
+    name: "Spring Batch",
+    level: 90
   }],
   cloud: [{
     name: "AWS",
@@ -44176,8 +44086,8 @@ const skills = {
     name: "Kubernetes",
     level: 90
   }, {
-    name: "Terraform",
-    level: 85
+    name: "Azure",
+    level: 80
   }],
   devops: [{
     name: "Jenkins",
@@ -44192,24 +44102,24 @@ const skills = {
     name: "Monitoring",
     level: 85
   }, {
-    name: "GitOps",
-    level: 80
+    name: "Production Operations",
+    level: 90
   }],
   databases: [{
     name: "PostgreSQL",
-    level: 95
-  }, {
-    name: "Redis",
-    level: 90
-  }, {
-    name: "MongoDB",
     level: 85
   }, {
-    name: "Elasticsearch",
-    level: 80
+    name: "Oracle DB",
+    level: 90
   }, {
-    name: "Cassandra",
-    level: 75
+    name: "MySQL",
+    level: 85
+  }, {
+    name: "SQL Server",
+    level: 85
+  }, {
+    name: "Liquibase",
+    level: 85
   }],
   messaging: [{
     name: "Kafka",
@@ -44218,190 +44128,149 @@ const skills = {
     name: "RabbitMQ",
     level: 85
   }, {
-    name: "AWS SQS",
+    name: "OCI Queue",
     level: 80
   }, {
-    name: "Event Streaming",
-    level: 90
+    name: "Azure Service Bus",
+    level: 80
   }],
   ai: [{
-    name: "OpenAI API",
+    name: "Claude",
     level: 85
   }, {
-    name: "LangChain",
-    level: 80
+    name: "GitHub Copilot",
+    level: 85
   }, {
-    name: "ML Integration",
+    name: "AI-Assisted Development",
+    level: 85
+  }, {
+    name: "LLM Integration",
     level: 75
-  }, {
-    name: "AI Automation",
-    level: 85
   }]
 };
 const projects = [{
   id: 1,
-  title: "FinTech Card Reconciliation Platform",
-  description: "Enterprise-grade reconciliation system processing 5M+ transactions daily across multiple payment networks. Reduced reconciliation time by 85% and improved accuracy to 99.98%.",
-  tech: ["Java", "Spring Boot", "Kafka", "PostgreSQL", "Redis", "Kubernetes", "AWS"],
-  features: ["Real-time transaction matching", "Multi-source data aggregation", "Automated dispute resolution", "Compliance reporting dashboard"],
-  architecture: "Event-driven microservices with Kafka streaming, distributed caching, and automated failover",
-  github: "https://github.com/raviaicode/card-reconciliation",
-  demo: "https://demo.reconciliation.example.com"
+  title: "NeoPay — Event-Driven Payments",
+  description: "A hands-on fintech system that demonstrates a resilient order-to-payment workflow across independently deployable Spring Boot services. Kafka carries each business event, PostgreSQL persists service-owned state, and Docker Compose brings the complete stack up locally.",
+  tech: ["Java 21", "Spring Boot 3", "Apache Kafka", "PostgreSQL", "Docker Compose", "Liquibase"],
+  features: ["Order → payment → notification choreography", "Idempotent payment event processing", "Retry handling with dead-letter topics", "Integration tests and an automated smoke test"],
+  architecture: "Three-service event-driven choreography: the Order service publishes OrderCreated, the Payment service processes each event idempotently and publishes PaymentProcessed, and the Notification service consumes the result. Correlation IDs provide end-to-end traceability, while retry and dead-letter paths isolate transient and poison-message failures.",
+  github: "https://github.com/raviaicode/neopay",
+  demo: ""
 }, {
   id: 2,
-  title: "Banking Transaction Processing API",
-  description: "High-throughput payment processing system handling $2B+ in daily transaction volume with 99.99% uptime and sub-50ms latency.",
-  tech: ["Java", "Spring WebFlux", "PostgreSQL", "Redis", "Docker", "AWS ECS"],
-  features: ["Real-time payment processing", "Multi-currency support", "Fraud detection integration", "PCI-DSS compliance"],
-  architecture: "Reactive microservices with circuit breakers, rate limiting, and distributed transactions",
-  github: "https://github.com/raviaicode/payment-api",
-  demo: "https://api.payments.example.com"
+  title: "UPI-Sim",
+  description: "Production-inspired UPI-style P2P payment simulator demonstrating double-entry ledger, idempotent transfers, ACID transactions, concurrency control, and secure REST APIs.",
+  tech: ["Java 21", "Spring Boot 3", "PostgreSQL", "Spring Security", "JWT", "Testcontainers"],
+  features: ["Double-entry bookkeeping", "Idempotent transfers with clientRef", "Pessimistic locking", "Money as integer minor units (paise)"],
+  architecture: "Monolithic Spring Boot app with pessimistic locking, deterministic wallet ordering, and Flyway migrations",
+  github: "https://github.com/raviaicode/upi-sim",
+  demo: ""
 }, {
   id: 3,
-  title: "AI Fraud Detection System",
-  description: "Machine learning powered fraud detection reducing false positives by 60% while catching 95% of fraudulent transactions in real-time.",
-  tech: ["Python", "Java", "OpenAI", "Kafka", "PostgreSQL", "Redis", "Kubernetes"],
-  features: ["Real-time anomaly detection", "Behavioral pattern analysis", "Risk scoring engine", "Automated case management"],
-  architecture: "Event-driven AI pipeline with streaming analytics and adaptive learning models",
-  github: "https://github.com/raviaicode/fraud-detection",
-  demo: "https://fraud.example.com"
+  title: "Hyrva",
+  description: "Cloud HR + payroll application with AI assistants. Features payroll engine, time & attendance, event-driven architecture, and two AI assistants: AskHR (read-only) and Workforce AI (action-taking).",
+  tech: ["Java", "Spring Boot", "React", "Claude AI", "H2", "Vite"],
+  features: ["Payroll engine with gross-to-net computation", "Time & attendance tracking", "Event-driven module communication", "AI-powered HR assistants"],
+  architecture: "Modular monolith with event bus, shared agent framework, and multi-turn AI chat integration",
+  github: "https://github.com/raviaicode/hyrva",
+  demo: ""
 }, {
   id: 4,
-  title: "Kubernetes Observability Platform",
-  description: "Comprehensive monitoring and observability solution for microservices across 200+ pods, providing real-time insights and automated incident response.",
-  tech: ["Prometheus", "Grafana", "ELK", "Jaeger", "Kubernetes", "Terraform"],
-  features: ["Distributed tracing", "Custom metrics dashboards", "Automated alerting", "Performance analytics"],
-  architecture: "Cloud-native observability stack with centralized logging and distributed tracing",
-  github: "https://github.com/raviaicode/k8s-observability",
-  demo: "https://monitoring.example.com"
-}, {
-  id: 5,
-  title: "CI/CD Automation Platform",
-  description: "Enterprise CI/CD platform reducing deployment time by 70% and enabling 50+ deployments per day with zero-downtime releases.",
-  tech: ["Jenkins", "GitHub Actions", "Docker", "Kubernetes", "Terraform", "ArgoCD"],
-  features: ["Automated testing pipelines", "Blue-green deployments", "Infrastructure as Code", "Security scanning integration"],
-  architecture: "GitOps-based deployment with automated rollbacks and progressive delivery",
-  github: "https://github.com/raviaicode/cicd-platform",
-  demo: "https://cicd.example.com"
+  title: "NeoCore.ai",
+  description: "Personal portfolio website showcasing modern web development with clean design, animated SVG backgrounds, and responsive layout.",
+  tech: ["JavaScript", "HTML/CSS", "SVG Animation", "React"],
+  features: ["Animated SVG background", "Responsive design", "Dark theme", "Smooth scroll navigation"],
+  architecture: "Static site with React SPA and custom SVG animations",
+  github: "https://github.com/raviaicode/neocore.ai",
+  demo: "https://raviaicode.github.io/neocore.ai/"
 }];
 const experience = [{
   id: 1,
-  company: "Global FinTech Corp",
-  role: "Senior Software Engineer",
-  period: "2021 - Present",
-  description: "Leading backend architecture for card reconciliation and payment processing systems. Architected microservices handling $5B+ annual transaction volume.",
-  achievements: ["Reduced transaction processing time by 60%", "Led migration to Kubernetes, improving scalability by 10x", "Implemented AI fraud detection saving $2M annually"]
+  company: "Osfin",
+  role: "Senior Software Engineer (Tech Lead)",
+  period: "April 2023 - Present",
+  description: "Leading a 9-engineer cross-functional team and serving as Tech Owner for 2-3 banking clients across reconciliation, payment security, multi-cloud deployments, and production operations.",
+  achievements: ["Architected a PCI-DSS Level 1 tokenization engine processing 50M+ card transactions", "Re-engineered 10M-record reconciliation from 30 minutes to 4 minutes - a 7.5x speedup", "Delivered cryptographic key rotation for 10M cards in under 1 minute across OCI, AWS, GCP, and Azure", "Achieved 99.5%+ auto-match accuracy and reduced manual reconciliation effort by 70%"]
 }, {
   id: 2,
-  company: "Payment Solutions Inc",
-  role: "Software Engineer",
-  period: "2018 - 2021",
-  description: "Developed distributed payment processing systems and real-time reconciliation services for enterprise banking clients.",
-  achievements: ["Built real-time transaction monitoring system", "Optimized database queries reducing latency by 80%", "Implemented event-driven architecture with Kafka"]
-}, {
-  id: 3,
-  company: "Tech Innovations Ltd",
-  role: "Backend Developer",
-  period: "2016 - 2018",
-  description: "Developed RESTful APIs and microservices for financial applications, focusing on security and performance optimization.",
-  achievements: ["Designed and deployed 15+ microservices", "Achieved 99.9% uptime for critical services", "Introduced automated testing increasing coverage to 85%"]
+  company: "Ascent Cyber Solutions",
+  role: "Java Full Stack Developer",
+  period: "July 2017 - March 2023",
+  description: "Built enterprise reconciliation and core-banking systems for payments, card terminals, bank transfers, accounts, deposits, loans, and transaction workflows.",
+  achievements: ["Engineered reconciliation processing 300K+ daily transactions across 8+ payment channels", "Improved Spring Batch throughput by 45% through parallel steps and chunk processing", "Reduced third-party banking integration failures by 60% with retries and dead-letter queues", "Built a full-stack core banking platform with Spring, Hibernate, and Angular"]
 }];
-const certifications = [{
-  id: 1,
-  name: "AWS Certified Solutions Architect - Professional",
-  issuer: "Amazon Web Services",
-  year: "2023"
-}, {
-  id: 2,
-  name: "Certified Kubernetes Administrator (CKA)",
-  issuer: "Cloud Native Computing Foundation",
-  year: "2023"
-}, {
-  id: 3,
-  name: "Oracle Cloud Infrastructure Architect Associate",
-  issuer: "Oracle",
-  year: "2022"
-}, {
-  id: 4,
-  name: "Spring Professional Certification",
-  issuer: "VMware",
-  year: "2021"
-}, {
-  id: 5,
-  name: "Apache Kafka Developer Certification",
-  issuer: "Confluent",
-  year: "2022"
-}];
+const certifications = [];
 const architectureHighlights = [{
   id: 1,
-  title: "Microservices Architecture",
-  description: "Designed 50+ microservices with domain-driven design, achieving independent scalability and deployment.",
-  patterns: ["API Gateway", "Service Mesh", "Circuit Breaker", "CQRS"]
+  title: "PCI-DSS Tokenization",
+  description: "Architected an end-to-end tokenization engine protecting 50M+ card transactions and removing raw PAN exposure from payment workflows.",
+  patterns: ["Tokenization", "AES-256", "RSA", "HSM-backed KMS"]
 }, {
   id: 2,
-  title: "Event-Driven Systems",
-  description: "Implemented Kafka-based event streaming processing 10M+ events daily with exactly-once semantics.",
-  patterns: ["Event Sourcing", "Saga Pattern", "CDC", "Stream Processing"]
+  title: "Reconciliation at Scale",
+  description: "Moved core matching from batch database queries to in-memory processing, cutting a 10M-record run from 30 minutes to 4 minutes.",
+  patterns: ["In-memory Processing", "Parallelism", "Batch Optimization", "Auto-matching"]
 }, {
   id: 3,
-  title: "Cloud-Native Infrastructure",
-  description: "Deployed containerized applications on Kubernetes across multi-cloud environments with auto-scaling.",
-  patterns: ["12-Factor App", "Service Discovery", "Config Management", "Health Checks"]
+  title: "Multi-Cloud Key Management",
+  description: "Engineered zero-downtime cryptographic key lifecycle operations across OCI KMS, AWS KMS, GCP Cloud KMS, and Azure Key Vault.",
+  patterns: ["Key Rotation", "Dynamic Secrets", "Zero Downtime", "HashiCorp Vault"]
 }, {
   id: 4,
-  title: "Distributed Systems",
-  description: "Built resilient distributed systems with consensus algorithms, replication, and partition tolerance.",
-  patterns: ["Distributed Caching", "Load Balancing", "Sharding", "Replication"]
+  title: "Banking Event Ingestion",
+  description: "Built asynchronous ingestion for millions of multi-bank events with ordered delivery, retry handling, and dead-letter recovery.",
+  patterns: ["Apache Kafka", "RabbitMQ", "OCI Queue", "Azure Service Bus"]
 }];
 const devopsHighlights = [{
   id: 1,
-  title: "CI/CD Pipelines",
-  description: "Automated build, test, and deployment pipelines enabling 50+ production releases per day.",
-  tools: ["Jenkins", "GitHub Actions", "ArgoCD", "Spinnaker"]
+  title: "Secure Delivery Pipelines",
+  description: "Automated build and deployment workflows for containerized fintech services with security checks and controlled production releases.",
+  tools: ["Jenkins", "GitHub Actions", "Maven", "Git"]
 }, {
   id: 2,
-  title: "Infrastructure as Code",
-  description: "Managed cloud infrastructure with Terraform, enabling reproducible and version-controlled deployments.",
-  tools: ["Terraform", "CloudFormation", "Ansible", "Helm"]
+  title: "Multi-Cloud Kubernetes",
+  description: "Delivered containerized services across managed Kubernetes platforms spanning the four major cloud providers.",
+  tools: ["Docker", "OKE", "EKS", "GKE", "AKS"]
 }, {
   id: 3,
-  title: "Container Orchestration",
-  description: "Orchestrated 200+ containerized services on Kubernetes with automated scaling and self-healing.",
-  tools: ["Kubernetes", "Docker", "Istio", "Helm"]
+  title: "Zero-Downtime Releases",
+  description: "Orchestrated blue-green deployments and production migrations with less than five minutes of planned downtime.",
+  tools: ["Kubernetes", "Blue-Green", "Health Checks", "Rollback Planning"]
 }, {
   id: 4,
-  title: "Monitoring & Observability",
-  description: "Implemented comprehensive monitoring with distributed tracing, metrics, and centralized logging.",
-  tools: ["Prometheus", "Grafana", "ELK Stack", "Jaeger"]
+  title: "Production Ownership",
+  description: "Owns 24/7 monitoring, release readiness, incident response, root-cause analysis, and audit remediation for banking clients.",
+  tools: ["Prometheus", "Grafana", "ELK", "P1 Incident Response"]
 }];
 const aiIntegrations = [{
   id: 1,
-  title: "Fraud Detection Intelligence",
-  description: "Integrated OpenAI models for advanced pattern recognition in financial transactions, reducing false positives by 60%.",
-  capabilities: ["Anomaly Detection", "Behavioral Analysis", "Risk Scoring", "Automated Alerts"]
+  title: "AI-Assisted Engineering",
+  description: "Uses Claude and GitHub Copilot to accelerate implementation, review code, explore edge cases, and improve engineering documentation.",
+  capabilities: ["Code Review", "Test Design", "Refactoring", "Documentation"]
 }, {
   id: 2,
-  title: "LLM-Powered Backend Services",
-  description: "Built intelligent APIs leveraging large language models for document processing and customer support automation.",
-  capabilities: ["Document Analysis", "Intent Classification", "Auto-responses", "Data Extraction"]
+  title: "AI-Powered HR Assistants",
+  description: "Built Hyrva with AskHR for read-only workforce questions and Workforce AI for controlled, action-oriented HR workflows.",
+  capabilities: ["Multi-turn Chat", "Tool Use", "Read-only Assistant", "Action Workflows"]
 }, {
   id: 3,
-  title: "AI Automation Tools",
-  description: "Developed automation workflows using AI for code review, testing, and deployment optimization.",
-  capabilities: ["Code Analysis", "Test Generation", "Performance Optimization", "Security Scanning"]
+  title: "Human-in-the-Loop Automation",
+  description: "Designs AI-assisted workflows with explicit boundaries, review steps, and secure access to business operations.",
+  capabilities: ["Guardrails", "Approval Steps", "Auditability", "Secure Actions"]
 }];
 const stats = [{
-  label: "Years Experience",
-  value: "8+"
+  label: "Years in FinTech",
+  value: "9+"
 }, {
-  label: "Projects Delivered",
-  value: "50+"
+  label: "Cards Tokenized",
+  value: "50M+"
 }, {
-  label: "Daily Transactions",
-  value: "5M+"
+  label: "Faster Reconciliation",
+  value: "7.5x"
 }, {
-  label: "System Uptime",
-  value: "99.99%"
+  label: "Less Manual Effort",
+  value: "70%"
 }];
 
 const $ReactRefreshModuleId$ = __webpack_require__.$Refresh$.moduleId;
