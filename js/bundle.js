@@ -44053,7 +44053,7 @@ const personalInfo = {
   email: "ravi.ai.code@gmail.com",
   github: "https://github.com/raviaicode",
   linkedin: "https://www.linkedin.com/in/ravi-singh-fintech/",
-  resume: "Ravi_singh.pdf",
+  resume: "ravi-singh-resume.pdf",
   location: "Bengaluru, India"
 };
 const skills = {
