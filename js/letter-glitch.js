@@ -3,10 +3,7 @@
 // MIT + Commons Clause; see resource/react-bits-LICENSE.md.
 (() => {
 'use strict';
-const DEFAULT_CHARACTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$&*()-_+=/[]{};:<>.,0123456789';
 const DEFAULT_FONT = "ui-monospace, 'SF Mono', 'JetBrains Mono', Menlo, Consolas, 'Liberation Mono', monospace";
-const DARK_COLORS = ['#ffffff', '#61dca3'];
-const LIGHT_COLORS = ['#18181b', '#0f9f6e'];
 const MAX_COLORS = 8;
 const INTRO_SECONDS = 1.4;
 const REST_RATE = 0.2;
@@ -157,11 +154,11 @@ function initialize(container, canvas) {
   const settingsRef = { current: {
     colors: ['#22d3ee', '#5eead4', '#0e7490'], baseColor: '#38b8bb',
     characters: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789{}[]<>/+=', fontFamily: DEFAULT_FONT,
-    fontSize: 14, spacing: 0.65, density: 0.68, baseOpacity: 0.26,
+    fontSize: 15, spacing: 0.65, density: 0.64, baseOpacity: 0.44,
     glitchAmount: 0.14, speed: window.matchMedia('(max-width: 767px)').matches ? 0 : 0.3,
     smooth: true, interactive: false, cursorRadius: 100, clickEffect: 'none',
-    flow: 0.3, edgeFade: 0.1, centerFade: 0.45, intro: false,
-    backgroundColor: '#020817', dpr: Math.min(window.devicePixelRatio || 1, 1.5)
+    flow: 0.3, edgeFade: 0.08, centerFade: 0.5, intro: false,
+    backgroundColor: null, dpr: Math.min(window.devicePixelRatio || 1, 1.5)
   } };
     const gl = canvas?.getContext('webgl2', {
       alpha: true,
@@ -688,7 +685,7 @@ function initialize(container, canvas) {
 
     const frame = now => {
       raf = 0;
-      if (!alive || !visible || document.hidden || container.dataset.active === 'false') return;
+      if (!alive || !visible || document.hidden) return;
       const s = settingsRef.current;
       const dt = last ? clamp((now - last) / 1000, 0.0005, 0.05) : 1 / 60;
       last = now;
@@ -848,7 +845,6 @@ function initialize(container, canvas) {
     window.addEventListener('pointercancel', onPointerUp, { passive: true });
     document.documentElement.addEventListener('pointerleave', onPointerLeave);
     document.addEventListener('visibilitychange', onVisibility);
-    container.addEventListener('letter-glitch-wake', onVisibility);
     document.fonts?.addEventListener?.('loadingdone', onFonts);
     resize();
 
@@ -865,7 +861,6 @@ function initialize(container, canvas) {
       window.removeEventListener('pointercancel', onPointerUp);
       document.documentElement.removeEventListener('pointerleave', onPointerLeave);
       document.removeEventListener('visibilitychange', onVisibility);
-      container.removeEventListener('letter-glitch-wake', onVisibility);
       document.fonts?.removeEventListener?.('loadingdone', onFonts);
       gl.deleteTexture(atlasTexture);
       gl.deleteTexture(stateTexture);
@@ -879,34 +874,25 @@ function mount() {
   const hero = document.getElementById('hero');
   if (!hero) return false;
   if (document.getElementById('letter-glitch-bg')) return true;
-  // One viewport-sized simulation serves every section below the hero.
+  // One transparent simulation covers the site, above the SVG network and below content.
   const container = document.createElement('div');
   container.id = 'letter-glitch-bg';
   container.setAttribute('aria-hidden', 'true');
   document.body.appendChild(container);
   let scrollRaf = 0;
-  const updateClip = () => {
+  const updateScene = () => {
     scrollRaf = 0;
-    const boundary = hero.getBoundingClientRect().bottom;
-    const top = Math.max(0, Math.min(window.innerHeight, boundary));
-    container.style.clipPath = `inset(${top}px 0 0 0)`;
-    // Fade in below the actual section boundary, rather than revealing a hard edge.
-    container.style.setProperty('--glitch-start', `${boundary}px`);
-    container.style.setProperty('--glitch-end', `${boundary + 260}px`);
-    const active = top < window.innerHeight;
-    if (container.dataset.active !== String(active)) {
-      container.dataset.active = String(active);
-      if (active) container.dispatchEvent(new Event('letter-glitch-wake'));
-    }
+    // Keep the landing network prominent; strengthen the letters below it.
+    container.dataset.hero = String(hero.getBoundingClientRect().bottom > window.innerHeight * 0.45);
   };
   const onScroll = () => {
-    if (!scrollRaf) scrollRaf = requestAnimationFrame(updateClip);
+    if (!scrollRaf) scrollRaf = requestAnimationFrame(updateScene);
   };
   window.addEventListener('scroll', onScroll, { passive: true });
   window.addEventListener('resize', onScroll, { passive: true });
   const layoutObserver = new ResizeObserver(onScroll);
   layoutObserver.observe(hero);
-  updateClip();
+  updateScene();
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
   const mobile = window.matchMedia('(max-width: 767px)');
   let dispose;

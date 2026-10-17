@@ -2,22 +2,6 @@
 (() => {
 'use strict';
 if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-const THEMES = {
-  dark: {
-    surface: '#0c0c0f',
-    text: '#fafafa',
-    track: 'rgba(255, 255, 255, 0.1)',
-    light: '#ffffff'
-  },
-  light: {
-    surface: '#ffffff',
-    text: '#18181b',
-    track: 'rgba(24, 24, 27, 0.12)',
-    light: '#18181b'
-  }
-};
-
-const HOVERS = ['lap', 'brighten', 'reveal', 'none'];
 const BLEED = 48;
 const LAP = 0.9;
 const TAU = Math.PI * 2;

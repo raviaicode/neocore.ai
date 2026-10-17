@@ -37442,8 +37442,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/App.css */ "./src/App.css");
 /* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Header */ "./src/components/Header.jsx");
 /* harmony import */ var _components_Hero__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Hero */ "./src/components/Hero.jsx");
@@ -37454,7 +37452,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_DevOps__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/DevOps */ "./src/components/DevOps.jsx");
 /* harmony import */ var _components_AIIntegration__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/AIIntegration */ "./src/components/AIIntegration.jsx");
 /* harmony import */ var _components_Experience__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/Experience */ "./src/components/Experience.jsx");
-/* harmony import */ var _components_Certifications__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/Certifications */ "./src/components/Certifications.jsx");
 /* harmony import */ var _components_Contact__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/Contact */ "./src/components/Contact.jsx");
 /* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/Footer */ "./src/components/Footer.jsx");
 /* harmony import */ var _components_ui_sonner__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/ui/sonner */ "./src/components/ui/sonner.jsx");
@@ -37684,8 +37681,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   AIIntegration: () => (/* binding */ AIIntegration)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _ui_card__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ui/card */ "./src/components/ui/card.jsx");
 /* harmony import */ var _ui_badge__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ui/badge */ "./src/components/ui/badge.jsx");
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/sparkles.js");
@@ -37775,7 +37770,7 @@ const AIIntegration = () => {
         lineNumber: 13,
         columnNumber: 9
       }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("div", {
-        className: "grid md:grid-cols-3 gap-6",
+        className: "grid md:grid-cols-2 gap-6",
         "x-file-name": "AIIntegration",
         "x-line-number": "24",
         "x-column": "8",
@@ -38061,14 +38056,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   About: () => (/* binding */ About)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/award.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/building-2.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/users.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/zap.js");
-/* harmony import */ var _ui_card__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ui/card */ "./src/components/ui/card.jsx");
-/* harmony import */ var _mock__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../mock */ "./src/mock.js");
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
 
@@ -38111,10 +38098,8 @@ const About = () => {
     return () => { cancelled = true; observer.disconnect(); };
   }, []);
   const highlights = [
-    ['FinTech & Payments', 'Payments, reconciliation, and core banking, from design through production support.'],
-    ['Performance Engineering', 'In-memory matching, parallel batch processing, and distributed tracing.'],
-    ['Secure Multi-Cloud', 'Encryption, secrets, and key lifecycle operations across four cloud platforms.'],
-    ['Technical Leadership', 'Leading a 6-engineer team across releases, migrations, and production incidents.']
+    ['How I approach a system', 'Break complex requirements into clear service boundaries, data flows, and failure scenarios.'],
+    ['How I work with a team', 'Stay hands-on with implementation while making architecture decisions and reviewing delivery tradeoffs.']
   ];
   return h('section', { id: 'about', ref: rootRef, className: 'py-20', 'aria-labelledby': 'about-heading' },
     h('div', { className: 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8' },
@@ -38125,13 +38110,11 @@ const About = () => {
         )),
         h('div', null,
           h('div', { className: 'about-profile-heading' }, h('h2', { id: 'about-heading' }, 'About Me'),
-            h('p', null, 'I build secure, high-performance systems for banking and fintech. My work spans Java backend services, payment security, reconciliation, and production delivery.'),
-            h('div', { className: 'about-profile-meta' }, 'Bengaluru, India · Senior Backend Engineer / Java Tech Lead · 30-day notice')
+            h('p', null, 'I enjoy turning complex banking requirements into dependable software. My focus is making systems easier to reason about, operate, and improve as they grow.')
           ),
           h('div', { className: 'about-profile-highlights' }, highlights.map(([title, description]) => h('div', { key: title, className: 'about-profile-highlight' }, h('h3', null, title), h('p', null, description))))
         )
-      ),
-      h('div', { className: 'about-profile-stats' }, _mock__WEBPACK_IMPORTED_MODULE_6__.stats.map(stat => h('div', { key: stat.label, className: 'about-profile-stat', 'x-component': 'Card' }, h('strong', null, stat.value), h('span', null, stat.label))))
+      )
     )
   );
 };
@@ -38183,8 +38166,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   Architecture: () => (/* binding */ Architecture)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _ui_card__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ui/card */ "./src/components/ui/card.jsx");
 /* harmony import */ var _ui_badge__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ui/badge */ "./src/components/ui/badge.jsx");
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/activity.js");
@@ -38549,372 +38530,6 @@ if (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Pr
 
 /***/ },
 
-/***/ "./src/components/Certifications.jsx"
-/*!*******************************************!*\
-  !*** ./src/components/Certifications.jsx ***!
-  \*******************************************/
-(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Certifications: () => (/* binding */ Certifications)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _ui_card__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ui/card */ "./src/components/ui/card.jsx");
-/* harmony import */ var _ui_badge__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ui/badge */ "./src/components/ui/badge.jsx");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/award.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/calendar.js");
-/* harmony import */ var _mock__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../mock */ "./src/mock.js");
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
-/* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
-__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
-
-var _jsxFileName = "/app/frontend/src/components/Certifications.jsx";
-
-
-
-
-
-
-const Certifications = () => {
-  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("section", {
-    id: "certifications",
-    className: "py-20 bg-zinc-900",
-    "x-file-name": "Certifications",
-    "x-line-number": "9",
-    "x-column": "4",
-    "x-component": "section",
-    "x-id": "Certifications_9_4",
-    "x-dynamic": "false",
-    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
-      className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
-      "x-file-name": "Certifications",
-      "x-line-number": "10",
-      "x-column": "6",
-      "x-component": "div",
-      "x-id": "Certifications_10_6",
-      "x-dynamic": "false",
-      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
-        className: "text-center mb-16",
-        "x-file-name": "Certifications",
-        "x-line-number": "11",
-        "x-column": "8",
-        "x-component": "div",
-        "x-id": "Certifications_11_8",
-        "x-dynamic": "false",
-        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("h2", {
-          className: "text-3xl sm:text-4xl lg:text-5xl font-bold mb-4",
-          "x-file-name": "Certifications",
-          "x-line-number": "12",
-          "x-column": "10",
-          "x-component": "h2",
-          "x-id": "Certifications_12_10",
-          "x-dynamic": "false",
-          children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("span", {
-            className: "bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent",
-            "x-file-name": "Certifications",
-            "x-line-number": "13",
-            "x-column": "12",
-            "x-component": "span",
-            "x-id": "Certifications_13_12",
-            "x-dynamic": "false",
-            children: "Certifications & Achievements"
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 13,
-            columnNumber: 13
-          }, undefined)
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 12,
-          columnNumber: 11
-        }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("p", {
-          className: "text-zinc-400 text-lg max-w-3xl mx-auto",
-          "x-file-name": "Certifications",
-          "x-line-number": "17",
-          "x-column": "10",
-          "x-component": "p",
-          "x-id": "Certifications_17_10",
-          "x-dynamic": "false",
-          children: "Industry-recognized certifications and credentials"
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 17,
-          columnNumber: 11
-        }, undefined)]
-      }, void 0, true, {
-        fileName: _jsxFileName,
-        lineNumber: 11,
-        columnNumber: 9
-      }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
-        className: "grid md:grid-cols-2 lg:grid-cols-3 gap-6",
-        "x-file-name": "Certifications",
-        "x-line-number": "22",
-        "x-column": "8",
-        "x-component": "div",
-        "x-id": "Certifications_22_8",
-        "x-dynamic": "true",
-        "x-source-type": "computed",
-        "x-source-editable": "false",
-        children: _mock__WEBPACK_IMPORTED_MODULE_5__.certifications.map(cert => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)(_ui_card__WEBPACK_IMPORTED_MODULE_1__.Card, {
-          className: "bg-gradient-to-br from-zinc-900/80 to-zinc-900/40 border-zinc-800/50 backdrop-blur-sm hover:border-emerald-500/30 transition-all duration-300 group hover:scale-105",
-          "x-file-name": "Certifications",
-          "x-line-number": "24",
-          "x-column": "12",
-          "x-component": "Card",
-          "x-id": "Certifications_24_12",
-          "x-dynamic": "true",
-          "x-source-type": "static-imported",
-          "x-source-var": "certifications",
-          "x-source-file": "../mock",
-          "x-source-file-abs": "/app/frontend/src/mock.js",
-          "x-source-line": "175",
-          "x-source-editable": "true",
-          "x-array-var": "certifications",
-          "x-array-file": "../mock",
-          "x-array-line": "175",
-          "x-array-item-param": "cert",
-          children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)(_ui_card__WEBPACK_IMPORTED_MODULE_1__.CardContent, {
-            className: "p-6",
-            "x-file-name": "Certifications",
-            "x-line-number": "28",
-            "x-column": "14",
-            "x-component": "CardContent",
-            "x-id": "Certifications_28_14",
-            "x-dynamic": "true",
-            "x-excluded": "true",
-            "x-source-type": "static-imported",
-            "x-source-var": "certifications",
-            "x-source-file": "../mock",
-            "x-source-file-abs": "/app/frontend/src/mock.js",
-            "x-source-line": "175",
-            "x-source-editable": "true",
-            "x-array-var": "certifications",
-            "x-array-file": "../mock",
-            "x-array-line": "175",
-            "x-array-item-param": "cert",
-            children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
-              className: "flex items-start gap-4",
-              "x-file-name": "Certifications",
-              "x-line-number": "29",
-              "x-column": "16",
-              "x-component": "div",
-              "x-id": "Certifications_29_16",
-              "x-dynamic": "false",
-              children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
-                className: "p-3 bg-emerald-500/10 rounded-lg group-hover:bg-emerald-500/20 transition-colors duration-300",
-                "x-file-name": "Certifications",
-                "x-line-number": "30",
-                "x-column": "18",
-                "x-component": "div",
-                "x-id": "Certifications_30_18",
-                "x-dynamic": "false",
-                children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
-                  className: "h-6 w-6 text-emerald-400",
-                  "x-file-name": "Certifications",
-                  "x-line-number": "31",
-                  "x-column": "20",
-                  "x-component": "Award",
-                  "x-id": "Certifications_31_20",
-                  "x-dynamic": "true",
-                  "x-source-type": "static-imported",
-                  "x-source-var": "certifications",
-                  "x-source-file": "../mock",
-                  "x-source-file-abs": "/app/frontend/src/mock.js",
-                  "x-source-line": "175",
-                  "x-source-editable": "true",
-                  "x-array-var": "certifications",
-                  "x-array-file": "../mock",
-                  "x-array-line": "175",
-                  "x-array-item-param": "cert"
-                }, void 0, false, {
-                  fileName: _jsxFileName,
-                  lineNumber: 31,
-                  columnNumber: 21
-                }, undefined)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 30,
-                columnNumber: 19
-              }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
-                className: "flex-1",
-                "x-file-name": "Certifications",
-                "x-line-number": "33",
-                "x-column": "18",
-                "x-component": "div",
-                "x-id": "Certifications_33_18",
-                "x-dynamic": "false",
-                children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("h3", {
-                  className: "text-lg font-semibold text-zinc-100 mb-2 leading-tight",
-                  "x-file-name": "Certifications",
-                  "x-line-number": "34",
-                  "x-column": "20",
-                  "x-component": "h3",
-                  "x-id": "Certifications_34_20",
-                  "x-dynamic": "true",
-                  "x-source-type": "static-imported",
-                  "x-source-var": "certifications",
-                  "x-source-file": "../mock",
-                  "x-source-file-abs": "/app/frontend/src/mock.js",
-                  "x-source-line": "175",
-                  "x-source-path": "name",
-                  "x-source-editable": "true",
-                  "x-array-var": "certifications",
-                  "x-array-file": "../mock",
-                  "x-array-line": "175",
-                  "x-array-item-param": "cert",
-                  children: cert.name
-                }, void 0, false, {
-                  fileName: _jsxFileName,
-                  lineNumber: 34,
-                  columnNumber: 21
-                }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("p", {
-                  className: "text-zinc-400 text-sm mb-3",
-                  "x-file-name": "Certifications",
-                  "x-line-number": "37",
-                  "x-column": "20",
-                  "x-component": "p",
-                  "x-id": "Certifications_37_20",
-                  "x-dynamic": "true",
-                  "x-source-type": "static-imported",
-                  "x-source-var": "certifications",
-                  "x-source-file": "../mock",
-                  "x-source-file-abs": "/app/frontend/src/mock.js",
-                  "x-source-line": "175",
-                  "x-source-path": "issuer",
-                  "x-source-editable": "true",
-                  "x-array-var": "certifications",
-                  "x-array-file": "../mock",
-                  "x-array-line": "175",
-                  "x-array-item-param": "cert",
-                  children: cert.issuer
-                }, void 0, false, {
-                  fileName: _jsxFileName,
-                  lineNumber: 37,
-                  columnNumber: 21
-                }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)(_ui_badge__WEBPACK_IMPORTED_MODULE_2__.Badge, {
-                  variant: "outline",
-                  className: "border-cyan-500/30 text-cyan-400",
-                  "x-file-name": "Certifications",
-                  "x-line-number": "38",
-                  "x-column": "20",
-                  "x-component": "Badge",
-                  "x-id": "Certifications_38_20",
-                  "x-dynamic": "true",
-                  "x-source-type": "static-imported",
-                  "x-source-var": "certifications",
-                  "x-source-file": "../mock",
-                  "x-source-file-abs": "/app/frontend/src/mock.js",
-                  "x-source-line": "175",
-                  "x-source-path": "year",
-                  "x-source-editable": "true",
-                  "x-array-var": "certifications",
-                  "x-array-file": "../mock",
-                  "x-array-line": "175",
-                  "x-array-item-param": "cert",
-                  children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
-                    className: "h-3 w-3 mr-1",
-                    "x-file-name": "Certifications",
-                    "x-line-number": "39",
-                    "x-column": "22",
-                    "x-component": "Calendar",
-                    "x-id": "Certifications_39_22",
-                    "x-dynamic": "true",
-                    "x-source-type": "static-imported",
-                    "x-source-var": "certifications",
-                    "x-source-file": "../mock",
-                    "x-source-file-abs": "/app/frontend/src/mock.js",
-                    "x-source-line": "175",
-                    "x-source-editable": "true",
-                    "x-array-var": "certifications",
-                    "x-array-file": "../mock",
-                    "x-array-line": "175",
-                    "x-array-item-param": "cert"
-                  }, void 0, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 39,
-                    columnNumber: 23
-                  }, undefined), cert.year]
-                }, void 0, true, {
-                  fileName: _jsxFileName,
-                  lineNumber: 38,
-                  columnNumber: 21
-                }, undefined)]
-              }, void 0, true, {
-                fileName: _jsxFileName,
-                lineNumber: 33,
-                columnNumber: 19
-              }, undefined)]
-            }, void 0, true, {
-              fileName: _jsxFileName,
-              lineNumber: 29,
-              columnNumber: 17
-            }, undefined)
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 28,
-            columnNumber: 15
-          }, undefined)
-        }, cert.id, false, {
-          fileName: _jsxFileName,
-          lineNumber: 24,
-          columnNumber: 13
-        }, undefined))
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 22,
-        columnNumber: 9
-      }, undefined)]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 10,
-      columnNumber: 7
-    }, undefined)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 9,
-    columnNumber: 5
-  }, undefined);
-};
-_c = Certifications;
-var _c;
-__webpack_require__.$Refresh$.register(_c, "Certifications");
-
-const $ReactRefreshModuleId$ = __webpack_require__.$Refresh$.moduleId;
-const $ReactRefreshCurrentExports$ = __react_refresh_utils__.getModuleExports(
-	$ReactRefreshModuleId$
-);
-
-function $ReactRefreshModuleRuntime$(exports) {
-	if (true) {
-		let errorOverlay;
-		if (true) {
-			errorOverlay = false;
-		}
-		let testMode;
-		if (typeof __react_refresh_test__ !== 'undefined') {
-			testMode = __react_refresh_test__;
-		}
-		return __react_refresh_utils__.executeRuntime(
-			exports,
-			$ReactRefreshModuleId$,
-			module.hot,
-			errorOverlay,
-			testMode
-		);
-	}
-}
-
-if (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Promise) {
-	$ReactRefreshCurrentExports$.then($ReactRefreshModuleRuntime$);
-} else {
-	$ReactRefreshModuleRuntime$($ReactRefreshCurrentExports$);
-}
-
-/***/ },
-
 /***/ "./src/components/Contact.jsx"
 /*!************************************!*\
   !*** ./src/components/Contact.jsx ***!
@@ -38927,7 +38542,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   Contact: () => (/* binding */ Contact)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _ui_card__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ui/card */ "./src/components/ui/card.jsx");
 /* harmony import */ var _ui_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ui/button */ "./src/components/ui/button.jsx");
 /* harmony import */ var _ui_input__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ui/input */ "./src/components/ui/input.jsx");
@@ -38938,7 +38552,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/send.js");
 /* harmony import */ var _mock__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../mock */ "./src/mock.js");
 /* harmony import */ var sonner__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! sonner */ "./node_modules/sonner/dist/index.mjs");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! axios */ "./node_modules/axios/lib/axios.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
@@ -39317,7 +38930,7 @@ const Contact = () => {
               "x-component": "p",
               "x-id": "Contact_105_14",
               "x-dynamic": "false",
-              children: "Target roles: Senior Backend Engineer / Java Tech Lead. Bengaluru, India. Notice period: 30 days. Contact me to discuss a role, consulting engagement, or project."
+              children: "Have a backend role, architecture challenge, or fintech project in mind? Share the scope and I’ll get back to you."
             }, void 0, false, {
               fileName: _jsxFileName,
               lineNumber: 105,
@@ -39602,8 +39215,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   DevOps: () => (/* binding */ DevOps)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _ui_card__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ui/card */ "./src/components/ui/card.jsx");
 /* harmony import */ var _ui_badge__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ui/badge */ "./src/components/ui/badge.jsx");
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/chart-column.js");
@@ -39979,8 +39590,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   Experience: () => (/* binding */ Experience)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _ui_card__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ui/card */ "./src/components/ui/card.jsx");
 /* harmony import */ var _ui_badge__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ui/badge */ "./src/components/ui/badge.jsx");
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/briefcase.js");
@@ -40163,7 +39772,7 @@ const Experience = () => {
                   "x-array-line": "136",
                   "x-array-item-param": "job",
                   children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
-                    className: "flex items-start justify-between mb-4",
+                    className: "flex items-start justify-between mb-4 experience-job-heading",
                     "x-file-name": "Experience",
                     "x-line-number": "39",
                     "x-column": "22",
@@ -40516,8 +40125,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   Footer: () => (/* binding */ Footer)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/github.js");
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/linkedin.js");
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/mail.js");
@@ -40824,7 +40431,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   Header: () => (/* binding */ Header)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/file-text.js");
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/github.js");
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/linkedin.js");
@@ -41288,12 +40894,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   Hero: () => (/* binding */ Hero)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/arrow-down.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/file-text.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/github.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/linkedin.js");
-/* harmony import */ var _ui_button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ui/button */ "./src/components/ui/button.jsx");
 /* harmony import */ var _mock__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../mock */ "./src/mock.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
@@ -41574,15 +41175,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   Projects: () => (/* binding */ Projects)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _ui_card__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ui/card */ "./src/components/ui/card.jsx");
-/* harmony import */ var _ui_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ui/button */ "./src/components/ui/button.jsx");
-/* harmony import */ var _ui_badge__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ui/badge */ "./src/components/ui/badge.jsx");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/cpu.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/external-link.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/github.js");
 /* harmony import */ var _mock__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../mock */ "./src/mock.js");
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
 
@@ -41637,8 +41230,8 @@ const Projects = () => {
       })),
       h('aside', { className: 'production-results-note' },
         h('strong', null, 'Professional results and public demos'),
-        h('p', null, 'The 7.5× reconciliation improvement is a reported result from my professional work: a 10M-record batch improved from 30 minutes to 4 minutes by moving matching from batch database queries to in-memory processing. Hardware specifications and repeatable benchmark artifacts are not published here. The projects above are separate personal implementations.'),
-        h('a', { href: 'ravi-singh-resume.pdf' }, 'See professional experience in my resume ↗')
+        h('p', null, 'These personal projects are separate from the professional results in my experience below. Production benchmarks are reported outcomes; repeatable benchmark artifacts are not published here.'),
+        h('a', { href: '#experience' }, 'See professional experience ↓')
       )
     )
   );
@@ -41692,16 +41285,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   Skills: () => (/* binding */ Skills)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _ui_card__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ui/card */ "./src/components/ui/card.jsx");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/brain.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/cloud.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/database.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/message-square.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/server.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/settings.js");
-/* harmony import */ var _mock__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../mock */ "./src/mock.js");
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
 
@@ -41721,7 +41304,7 @@ const Skills = () => {
     h('div', { className: 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8' },
       h('div', { className: 'expertise-heading' },
         h('h2', { id: 'skills-heading' }, 'Technical Skills'),
-        h('p', null, 'The tools I work with. The engineering outcomes behind them.')
+        h('p', null, 'A focused toolkit for building, shipping, and operating backend systems.')
       ),
       h(Bento)
     )
@@ -41776,8 +41359,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   Badge: () => (/* binding */ Badge),
 /* harmony export */   badgeVariants: () => (/* binding */ badgeVariants)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var class_variance_authority__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! class-variance-authority */ "./node_modules/class-variance-authority/dist/index.mjs");
 /* harmony import */ var _lib_utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/lib/utils */ "./src/lib/utils.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
@@ -41875,7 +41456,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   buttonVariants: () => (/* binding */ buttonVariants)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _radix_ui_react_slot__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @radix-ui/react-slot */ "./node_modules/@radix-ui/react-slot/dist/index.mjs");
 /* harmony import */ var class_variance_authority__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! class-variance-authority */ "./node_modules/class-variance-authority/dist/index.mjs");
 /* harmony import */ var _lib_utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/lib/utils */ "./src/lib/utils.js");
@@ -41996,7 +41576,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   CardTitle: () => (/* binding */ CardTitle)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _lib_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/lib/utils */ "./src/lib/utils.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
@@ -42186,7 +41765,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   Input: () => (/* binding */ Input)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _lib_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/lib/utils */ "./src/lib/utils.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
@@ -42270,7 +41848,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   Label: () => (/* binding */ Label)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _radix_ui_react_label__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @radix-ui/react-label */ "./node_modules/@radix-ui/react-label/dist/index.mjs");
 /* harmony import */ var class_variance_authority__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! class-variance-authority */ "./node_modules/class-variance-authority/dist/index.mjs");
 /* harmony import */ var _lib_utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/lib/utils */ "./src/lib/utils.js");
@@ -42450,7 +42027,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   Textarea: () => (/* binding */ Textarea)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _lib_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/lib/utils */ "./src/lib/utils.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
@@ -42769,13 +42345,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   aiIntegrations: () => (/* binding */ aiIntegrations),
 /* harmony export */   architectureHighlights: () => (/* binding */ architectureHighlights),
-/* harmony export */   certifications: () => (/* binding */ certifications),
 /* harmony export */   devopsHighlights: () => (/* binding */ devopsHighlights),
 /* harmony export */   experience: () => (/* binding */ experience),
 /* harmony export */   personalInfo: () => (/* binding */ personalInfo),
 /* harmony export */   projects: () => (/* binding */ projects),
-/* harmony export */   skills: () => (/* binding */ skills),
-/* harmony export */   stats: () => (/* binding */ stats)
 /* harmony export */ });
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
@@ -42792,98 +42365,6 @@ const personalInfo = {
   linkedin: "https://www.linkedin.com/in/ravi-singh-fintech/",
   resume: "ravi-singh-resume.pdf",
   location: "Bengaluru, India"
-};
-const skills = {
-  backend: [{
-    name: "Java",
-    level: 95
-  }, {
-    name: "Spring Boot",
-    level: 95
-  }, {
-    name: "Microservices",
-    level: 90
-  }, {
-    name: "REST APIs",
-    level: 95
-  }, {
-    name: "Spring Batch",
-    level: 90
-  }],
-  cloud: [{
-    name: "AWS",
-    level: 90
-  }, {
-    name: "OCI",
-    level: 85
-  }, {
-    name: "Docker",
-    level: 95
-  }, {
-    name: "Kubernetes",
-    level: 90
-  }, {
-    name: "Azure",
-    level: 80
-  }],
-  devops: [{
-    name: "Jenkins",
-    level: 90
-  }, {
-    name: "GitHub Actions",
-    level: 90
-  }, {
-    name: "CI/CD",
-    level: 95
-  }, {
-    name: "Monitoring",
-    level: 85
-  }, {
-    name: "Production Operations",
-    level: 90
-  }],
-  databases: [{
-    name: "PostgreSQL",
-    level: 85
-  }, {
-    name: "Oracle DB",
-    level: 90
-  }, {
-    name: "MySQL",
-    level: 85
-  }, {
-    name: "SQL Server",
-    level: 85
-  }, {
-    name: "Liquibase",
-    level: 85
-  }],
-  messaging: [{
-    name: "Kafka",
-    level: 95
-  }, {
-    name: "RabbitMQ",
-    level: 85
-  }, {
-    name: "OCI Queue",
-    level: 80
-  }, {
-    name: "Azure Service Bus",
-    level: 80
-  }],
-  ai: [{
-    name: "Claude",
-    level: 85
-  }, {
-    name: "GitHub Copilot",
-    level: 85
-  }, {
-    name: "AI-Assisted Development",
-    level: 85
-  }, {
-    name: "LLM Integration",
-    level: 75
-  }]
 };
 const projects = [{
   id: 5,
@@ -42942,26 +42423,25 @@ const experience = [{
   description: "Built enterprise reconciliation and core-banking systems for payments, card terminals, bank transfers, accounts, deposits, loans, and transaction workflows.",
   achievements: ["Engineered reconciliation processing 300K+ daily transactions across 8+ payment channels", "Improved Spring Batch throughput by 45% through parallel steps and chunk processing", "Reduced third-party banking integration failures by 60% with retries and dead-letter queues", "Built a full-stack core banking platform with Spring, Hibernate, and Angular"]
 }];
-const certifications = [];
 const architectureHighlights = [{
   id: 1,
   title: "PCI-DSS Tokenization",
-  description: "Architected an end-to-end tokenization engine protecting 50M+ card transactions and removing raw PAN exposure from payment workflows.",
+  description: "Remove raw PAN exposure from payment workflows through tokenization, encryption, and HSM-backed key management.",
   patterns: ["Tokenization", "AES-256", "RSA", "HSM-backed KMS"]
 }, {
   id: 2,
   title: "Reconciliation at Scale",
-  description: "Moved core matching from batch database queries to in-memory processing, cutting a 10M-record run from 30 minutes to 4 minutes.",
+  description: "Move matching out of repeated database queries into in-memory processing, with parallel batch execution for large reconciliation workloads.",
   patterns: ["In-memory Processing", "Parallelism", "Batch Optimization", "Auto-matching"]
 }, {
   id: 3,
   title: "Multi-Cloud Key Management",
-  description: "Engineered zero-downtime cryptographic key lifecycle operations across OCI KMS, AWS KMS, GCP Cloud KMS, and Azure Key Vault.",
+  description: "Coordinate key rotation and dynamic secrets across cloud KMS providers while keeping dependent services available.",
   patterns: ["Key Rotation", "Dynamic Secrets", "Zero Downtime", "HashiCorp Vault"]
 }, {
   id: 4,
   title: "Banking Event Ingestion",
-  description: "Built asynchronous ingestion for millions of multi-bank events with ordered delivery, retry handling, and dead-letter recovery.",
+  description: "Handle asynchronous bank events with ordered delivery, idempotent consumers, bounded retries, and dead-letter recovery.",
   patterns: ["Apache Kafka", "RabbitMQ", "OCI Queue", "Azure Service Bus"]
 }];
 const devopsHighlights = [{
@@ -42987,32 +42467,14 @@ const devopsHighlights = [{
 }];
 const aiIntegrations = [{
   id: 1,
-  title: "AI-Assisted Engineering",
+  title: "Code Review & Test Design",
   description: "Uses Claude and GitHub Copilot to accelerate implementation, review code, explore edge cases, and improve engineering documentation.",
   capabilities: ["Code Review", "Test Design", "Refactoring", "Documentation"]
-}, {
-  id: 2,
-  title: "AI-Powered HR Assistants",
-  description: "Built Hyrva with AskHR for read-only workforce questions and Workforce AI for controlled, action-oriented HR workflows.",
-  capabilities: ["Multi-turn Chat", "Tool Use", "Read-only Assistant", "Action Workflows"]
 }, {
   id: 3,
   title: "Human-in-the-Loop Automation",
   description: "Designs AI-assisted workflows with explicit boundaries, review steps, and secure access to business operations.",
   capabilities: ["Guardrails", "Approval Steps", "Auditability", "Secure Actions"]
-}];
-const stats = [{
-  label: "Years in FinTech",
-  value: "9+"
-}, {
-  label: "Card Transactions Secured",
-  value: "50M+"
-}, {
-  label: "Faster Reconciliation",
-  value: "7.5x"
-}, {
-  label: "Less Manual Effort",
-  value: "70%"
 }];
 
 const $ReactRefreshModuleId$ = __webpack_require__.$Refresh$.moduleId;
@@ -44230,4 +43692,3 @@ if (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Pr
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=bundle.js.map
