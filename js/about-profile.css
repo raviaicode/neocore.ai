@@ -1,0 +1,19 @@
+.about-profile-layout { display:grid; grid-template-columns:350px minmax(0,1fr); gap:54px; align-items:center; margin-bottom:34px; }
+.about-profile-heading { margin-bottom:22px; }
+.about-profile-heading h2 { margin:0 0 14px; font-size:clamp(30px,4vw,44px); font-weight:700; letter-spacing:-.035em; color:#e2f4f3; }
+.about-profile-heading > p { color:#a5b9c8; font-size:15px; line-height:1.8; max-width:680px; }
+.about-profile-meta { color:#74bfb8; font-size:11px; margin-top:15px; line-height:1.8; }
+.about-profile-highlights { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px 24px; }
+.about-profile-highlight { border-top:1px solid #29414d; padding-top:14px; }
+.about-profile-highlight h3 { margin:0 0 7px; font-size:13px; color:#d3e8ed; font-weight:600; }
+.about-profile-highlight p { margin:0; color:#8fa7b8; font-size:12px; line-height:1.8; }
+.about-profile-stats { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; }
+.about-profile-stat { padding:20px 12px; border:1px solid #233846; background:#0b1724; border-radius:12px; text-align:center; }
+.about-profile-stat strong { display:block; font-size:30px; font-weight:600; letter-spacing:-.04em; color:#78d4cc; }
+.about-profile-stat span { display:block; color:#8fa7b8; font-size:11px; margin-top:8px; }
+.profile-placeholder { margin:0 auto; width:220px; text-align:center; }
+.profile-placeholder img { display:block; width:200px; height:265px; object-fit:cover; object-position:50% 40%; margin:auto; border:1px solid #3d5b64; border-radius:12px; filter:grayscale(1) brightness(.8) contrast(1.05); }
+.profile-placeholder figcaption { margin-top:15px; color:#dbe8ed; font-size:18px; }
+.profile-placeholder small { display:block; color:#79a5aa; font-size:10px; margin-top:6px; }
+@media(max-width:1023px) { .about-profile-layout { grid-template-columns:280px minmax(0,1fr); gap:26px; } }
+@media(max-width:767px) { .about-profile-layout { grid-template-columns:1fr; gap:30px; } .about-profile-heading { text-align:center; } .about-profile-stats { grid-template-columns:repeat(2,minmax(0,1fr)); } .about-profile-highlights { gap:18px; } }

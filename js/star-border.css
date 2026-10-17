@@ -1,0 +1,23 @@
+/* Enhance the existing actions while preserving their size, label and handlers. */
+#root .portfolio-star-border {
+  position: relative;
+  overflow: visible;
+  background: #0b2330;
+  background-image: none;
+  color: #ccfbf1;
+  border: 1px solid #2d6c70;
+}
+#root .portfolio-star-border:hover { background: #10323d; }
+.portfolio-star-border__light {
+  position: absolute;
+  top: -48px;
+  left: -48px;
+  width: calc(100% + 96px);
+  height: calc(100% + 96px);
+  max-width: none;
+  pointer-events: none;
+  border-radius: inherit;
+}
+#root .portfolio-star-border:focus-visible { outline: 2px solid #5eead4; outline-offset: 4px; }
+#root .portfolio-star-border:disabled .portfolio-star-border__light { visibility: hidden; }
+@media (prefers-reduced-motion: reduce) { .portfolio-star-border__light { display: none; } }
