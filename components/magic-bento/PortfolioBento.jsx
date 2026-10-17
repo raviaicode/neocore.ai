@@ -3,12 +3,12 @@ import MagicBento from './MagicBento';
 import './portfolio-bento.css';
 
 const groups = [
-  {id:'backend', title:'Backend Engineering', metric:'7.5× faster reconciliation', detail:'Re-engineered a 10M-record workflow from 30 minutes to 4 minutes.', tech:['Java','Spring Boot','Spring Security','Spring Batch','Hibernate','REST APIs'], href:'#projects'},
-  {id:'cloud', title:'Cloud & Security', metric:'Key lifecycle across 4 clouds', detail:'Delivered zero-downtime key rotation and secure secrets management.', tech:['AWS','OCI','Google Cloud','Azure','HashiCorp Vault','KMS'], href:'#architecture'},
-  {id:'delivery', title:'Delivery & Operations', metric:'Production delivery ownership', detail:'Blue-green releases, banking migrations, monitoring, and incident response.', tech:['Jenkins','GitHub Actions','Git','Docker','Kubernetes','Maven'], href:'#devops'},
-  {id:'data', title:'Databases & Persistence', metric:'Banking data workflows', detail:'Built persistence and reconciliation workflows for accounts, payments, and transactions.', tech:['Oracle','MySQL','SQL Server','Redis','SQL'], href:'#projects'},
-  {id:'messaging', title:'Messaging & Resilience', metric:'Millions of banking events daily', detail:'Idempotent consumers, ordered delivery, retries, and dead-letter recovery.', tech:['RabbitMQ','AWS SQS','OCI Queue','Azure Service Bus','Resilience4j'], href:'#projects'},
-  {id:'ai', title:'AI-Assisted Engineering', metric:'Engineering workflow automation', detail:'PR review, test generation, security checks, documentation, and RCA drafts.', tech:['Claude Code','GitHub Copilot','Codex','Custom Skills'], href:'#ai'}
+  {id:'backend', title:'Backend Engineering', detail:'Service APIs, application security, and batch processing.', tech:['Java','Spring Boot','Spring Security','Spring Batch','Hibernate','REST APIs'], href:'#architecture'},
+  {id:'cloud', title:'Cloud & Security', detail:'Cloud infrastructure, secrets, and key management.', tech:['AWS','OCI','Google Cloud','Azure','HashiCorp Vault','KMS'], href:'#architecture'},
+  {id:'delivery', title:'Delivery & Operations', detail:'Build pipelines, containers, and release tooling.', tech:['Jenkins','GitHub Actions','Git','Docker','Kubernetes','Maven'], href:'#devops'},
+  {id:'data', title:'Databases & Persistence', detail:'Relational storage, SQL, and caching.', tech:['Oracle','MySQL','SQL Server','Redis','SQL'], href:'#projects'},
+  {id:'messaging', title:'Messaging & Resilience', detail:'Queues, asynchronous processing, and fault tolerance.', tech:['RabbitMQ','AWS SQS','OCI Queue','Azure Service Bus','Resilience4j'], href:'#architecture'},
+  {id:'ai', title:'AI Development Tools', detail:'Coding assistants and custom engineering skills.', tech:['Claude Code','GitHub Copilot','Codex','Custom Skills'], href:'#ai'}
 ];
 const paths = {
   backend: <><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M7 6.5h.01M7 17.5h.01"/></>,
@@ -43,14 +43,14 @@ export default function PortfolioBento() {
     content:<div className="portfolio-bento__body">
       <div className="portfolio-bento__header"><span className="portfolio-bento__icon"><Icon type={group.id}/></span><h3>{group.title}</h3></div>
       <ul className="portfolio-bento__tech" aria-label={`${group.title} technologies`}>{group.tech.map(tech=><li key={tech}>{tech}</li>)}</ul>
-      <div className="portfolio-bento__evidence"><strong>{group.metric}</strong><p>{group.detail}</p></div>
+      <div className="portfolio-bento__evidence"><p>{group.detail}</p></div>
     </div>
   }));
   return <div ref={rootRef} className="portfolio-bento-wrap" data-quiet={quiet}>
-    <MagicBento key={`${quiet?'quiet':'motion'}-${wide?'wide':'narrow'}`} items={items} columns={wide?3:2} rowHeight={278} gap={18} radius={18}
+    <MagicBento key={`${quiet?'quiet':'motion'}-${wide?'wide':'narrow'}`} items={items} columns={wide?3:2} rowHeight={236} gap={18} radius={18}
       glowColor="#5eead4" enableBorderGlow={!quiet} enableSpotlight={!quiet} spotlightRadius={320}
       enableTilt={!quiet} enableMagnetism={false} enableStars={!quiet} particleCount={10}
-      clickEffect={!quiet} textAutoHide={false} intro={!quiet} disableAnimations={quiet}
+      clickEffect={!quiet} textAutoHide={false} intro={false} disableAnimations={quiet}
       className="portfolio-bento"/>
   </div>;
 }
