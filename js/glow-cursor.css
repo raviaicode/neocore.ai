@@ -1,0 +1,19 @@
+/* Viewport overlay keeps the trail aligned while scrolling, without blocking links. */
+#glow-cursor {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  pointer-events: none;
+  overflow: hidden;
+}
+#glow-cursor canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  user-select: none;
+}
+@media (prefers-reduced-motion: reduce), (any-pointer: coarse) {
+  #glow-cursor { display: none; }
+}

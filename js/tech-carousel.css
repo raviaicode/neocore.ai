@@ -1,0 +1,23 @@
+.tech-showcase { margin: 0 0 28px; padding: 18px 20px 14px; border: 1px solid #183342; border-radius: 16px; background: linear-gradient(110deg, #0c1e2c80, #07101e80); color: #e2e8f0; font-family: Inter, system-ui, sans-serif; }
+.tech-showcase__intro { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 14px; }
+.tech-showcase__intro span:first-child { color: #5eead4; font-size: 10px; letter-spacing: .16em; }
+.tech-showcase__intro span:last-child { color: #94a3b8; font-size: 11px; }
+.tech-showcase__strip { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 8px; }
+.tech-showcase__card { appearance: none; display: flex; align-items: center; justify-content: center; gap: 10px; min-width: 0; padding: 13px 8px; border: 1px solid transparent; border-radius: 10px; color: #b7c7d5; background: #10223166; cursor: pointer; transition: background .2s, border-color .2s; font: 500 12px Inter, system-ui, sans-serif; white-space: nowrap; }
+.tech-showcase__card:hover { background: #143342; border-color: #235166; }
+.tech-showcase__card[aria-pressed="true"] { color: #e2e8f0; border-color: #5eead460; background: #12313b; }
+.tech-showcase__card:focus-visible { outline: 2px solid #5eead4; outline-offset: 2px; }
+.tech-showcase__logo { display: block; width: 28px; height: 28px; flex-shrink: 0; object-fit: contain; }
+.tech-showcase__logo--aws, .tech-showcase__logo--claude, .tech-showcase__logo--codex { filter: brightness(0) saturate(100%) invert(88%) sepia(14%) saturate(1325%) hue-rotate(112deg) brightness(99%) contrast(86%); }
+.tech-showcase__detail { margin: 12px 0 0; min-height: 20px; color: #94a3b8; font-size: 12px; line-height: 1.65; }
+.tech-showcase__detail strong { color: #cbd5e1; font-weight: 500; }
+@media (max-width: 1000px) { .tech-showcase__card { flex-direction: column; gap: 8px; font-size: 11px; } }
+@media (max-width: 600px) { .tech-showcase { padding: 16px 12px 12px; } .tech-showcase__strip { display: flex; overflow-x: auto; gap: 8px; padding: 3px 2px 9px; scrollbar-width: thin; scrollbar-color: #235166 transparent; } .tech-showcase__card { flex: 0 0 86px; padding: 12px 8px; } .tech-showcase__detail { min-height: 60px; } .tech-showcase__intro span:last-child { font-size: 10px; } }
+@media (prefers-reduced-motion: reduce) { .tech-showcase__card { transition: none; } }
+.tech-showcase__filters { display: flex; gap: 6px; flex-wrap: wrap; margin: 0 0 12px; }
+.tech-showcase__filters button { padding: 5px 10px; border: 1px solid transparent; border-radius: 6px; background: transparent; color: #94a3b8; font: 11px Inter, system-ui, sans-serif; cursor: pointer; }
+.tech-showcase__filters button:hover { color: #e2e8f0; background: #102b36; }
+.tech-showcase__filters button[aria-pressed="true"] { color: #5eead4; border-color: #235166; background: #12313b; }
+.tech-showcase__filters button:focus-visible { outline: 2px solid #5eead4; outline-offset: 2px; }
+.tech-showcase__card[hidden] { display: none; }
+.tech-showcase__logo--vault, .tech-showcase__logo--opentelemetry, .tech-showcase__logo--copilot { filter: brightness(0) saturate(100%) invert(88%) sepia(14%) saturate(1325%) hue-rotate(112deg) brightness(99%) contrast(86%); }

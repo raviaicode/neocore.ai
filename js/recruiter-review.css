@@ -1,0 +1,46 @@
+.hero-hiring-meta { flex-basis: 100%; font-size: 12px; line-height: 1.7; color: #9bb4c4; margin: 0 0 5px; }
+.hero-action { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; border-radius: 8px; padding: 10px 18px; font-size: 14px; font-weight: 500; text-decoration: none; transition: background .2s, border-color .2s; }
+.hero-action--primary { background: #15b998; color: #031912; border: 1px solid #36d3b2; }
+.hero-action--primary:hover { background: #36d3b2; }
+.hero-action--resume { border: 1px solid #3d8b92; background: #0b2330; color: #ccfbf1; }
+.hero-action--social { padding-left: 10px; padding-right: 10px; color: #a9becd; }
+.hero-action--social:hover { color: #5eead4; }
+.hero-action:focus-visible, .project-evidence-link:focus-visible, .project-case-study summary:focus-visible { outline: 2px solid #5eead4; outline-offset: 4px; }
+#glow-cursor { opacity: .4; }
+.project-section-heading { text-align: center; margin-bottom: 36px; }
+.project-section-heading h2 { margin: 0 0 14px; font-size: clamp(30px,4vw,46px); font-weight: 700; letter-spacing: -.035em; line-height: 1.15; background: linear-gradient(100deg,#34d399,#22d3ee); background-clip: text; -webkit-background-clip: text; color: transparent; }
+.project-section-heading p { color: #94a3b8; font-size: 16px; line-height: 1.6; }
+.review-project-grid { display: grid; gap: 22px; }
+.review-project-card { padding: 26px; border: 1px solid #254151; border-radius: 16px; background: linear-gradient(140deg,#10212e,#09131f); }
+.review-project-header { display: flex; justify-content: space-between; align-items: center; gap: 18px; }
+.review-project-header h3 { font-size: 24px; color: #edf6fa; letter-spacing: -.025em; margin: 9px 0 0; font-weight: 600; line-height: 1.35; }
+.project-status { display: inline-block; font: 10px ui-monospace,monospace; color: #74d9d0; padding: 5px 8px; border: 1px solid #2c535d; background: #12313b; border-radius: 5px; }
+.review-project-description { margin: 16px 0; max-width: 900px; color: #a4b6c5; font-size: 14px; line-height: 1.8; }
+.review-project-tech { list-style: none; padding: 0; margin: 0 0 20px; display: flex; gap: 7px; flex-wrap: wrap; }
+.review-project-tech li { color: #aad7d5; border: 1px solid #254450; background: #122b37; padding: 4px 8px; border-radius: 5px; font-size: 10px; }
+.project-evidence-link { color: #7ce2dc; font-size: 12px; text-decoration: none; line-height: 1.7; }
+.project-evidence-link:hover { text-decoration: underline; }
+.project-case-study { border-top: 1px solid #254151; }
+.project-case-study summary { padding: 16px 0 0; color: #d6f5f1; cursor: pointer; font-size: 14px; font-weight: 500; }
+.project-case-study[open] summary { margin-bottom: 22px; }
+.case-study-content { color: #a4b6c5; font-size: 13px; line-height: 1.85; }
+.case-study-block { margin: 0 0 22px; }
+.case-study-block h4 { margin: 0 0 7px; color: #d6e7ee; font-size: 14px; font-weight: 600; }
+.case-study-block p { margin: 0; }
+.case-study-decisions { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0 28px; }
+.case-study-diagram { margin: 24px 0; }
+.case-study-diagram img { display: block; width: 100%; height: auto; border: 1px solid #23434f; border-radius: 12px; }
+.case-study-diagram figcaption { font-size: 10px; color: #718fa1; margin-top: 8px; }
+.case-study-content pre { padding: 18px; background: #050d17; border: 1px solid #1e3644; border-radius: 10px; color: #a5e3dc; font: 11px/1.9 ui-monospace,monospace; white-space: pre-wrap; overflow-wrap: anywhere; }
+.project-evidence-links { display: flex; gap: 12px 24px; flex-wrap: wrap; margin: 22px 0 0; }
+.production-results-note { margin-top: 24px; padding: 20px; border-left: 2px solid #2d686d; background: #0b1b2888; color: #91a7b8; font-size: 12px; line-height: 1.8; }
+.production-results-note strong { color: #c0d5df; }
+.production-results-note p { margin: 7px 0; }
+.production-results-note a { color: #75d2ce; }
+@media(max-width:600px) { .hero-hiring-meta { max-width: 310px; } .hero-action { padding: 10px 14px; } .review-project-card { padding: 20px; } .review-project-header { align-items: flex-start; } .review-project-header h3 { font-size: 20px; } .review-project-header > a { white-space: nowrap; } .case-study-decisions { grid-template-columns: 1fr; } .case-study-diagram { overflow-x: auto; } .case-study-diagram img { min-width: 640px; } }
+@media(prefers-reduced-motion:reduce) { .hero-action { transition: none; } }
+/* Keep the hiring actions above the fold on typical laptop screens. */
+@media (min-width: 1024px) and (max-height: 850px) {
+  #hero .space-y-8 > :not([hidden]) ~ :not([hidden]) { margin-top: 18px; }
+  #hero [x-id="Hero_47_10"] { padding-top: 10px; }
+}

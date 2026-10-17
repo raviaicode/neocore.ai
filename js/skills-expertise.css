@@ -1,0 +1,4 @@
+/* React Bits-inspired Spotlight Card + Animated Content, adapted for this static build. */
+.expertise-heading { text-align: center; margin-bottom: 36px; }
+.expertise-heading h2 { margin: 0 0 14px; font-size: clamp(30px, 4vw, 46px); font-weight: 700; letter-spacing: -.035em; line-height: 1.15; background: linear-gradient(100deg, #34d399, #22d3ee); background-clip: text; -webkit-background-clip: text; color: transparent; }
+.expertise-heading > p { color: #94a3b8; font-size: 16px; line-height: 1.6; }

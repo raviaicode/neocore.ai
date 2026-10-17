@@ -1,0 +1,13 @@
+.section-kicker { display: block; color: #5eead4; font: 10px ui-monospace,monospace; letter-spacing: .2em; margin-bottom: 15px; }
+#root section:not(#hero) { position: relative; isolation: isolate; }
+#root section:not(#hero)::before { content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none; background: radial-gradient(ellipse at 3% 35%, #0c5a6313, transparent 45%), radial-gradient(ellipse at 98% 70%, #123e6b18, transparent 50%); }
+#root #projects { border-top: 1px solid #5eead40e; border-bottom: 1px solid #5eead40e; }
+#root .portfolio-motion-card { position: relative; isolation: isolate; overflow: hidden; border-color: #1e3444; background-color: #0b1522; }
+.portfolio-motion-card::before { content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none; opacity: 0; background: radial-gradient(420px circle at var(--card-x,50%) var(--card-y,50%), #22d3ee12, transparent 75%); transition: opacity .3s; }
+@media (hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference) {
+  #root .portfolio-motion-card { transition: translate .3s cubic-bezier(.22,1,.36,1), border-color .3s, box-shadow .3s; }
+  #root .portfolio-motion-card:hover { translate: 0 -3px; border-color: #2e6a75; box-shadow: 0 18px 38px #0003; }
+  .portfolio-motion-card:hover::before { opacity: 1; }
+}
+#root #projects [x-component="CardTitle"] { letter-spacing: -.03em; }
+@media (prefers-reduced-motion:reduce) { .portfolio-motion-card, .portfolio-motion-card::before { transition:none !important; } }

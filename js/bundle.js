@@ -38079,377 +38079,61 @@ var _jsxFileName = "/app/frontend/src/components/About.jsx";
 
 
 const About = () => {
-  const highlights = [{
-    icon: lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"],
-    title: "FinTech & Payments",
-    description: "9+ years building reconciliation, core-banking, and PCI-DSS payment-security platforms for banking and fintech clients."
-  }, {
-    icon: lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"],
-    title: "Performance Engineering",
-    description: "Re-engineered a 10M-record reconciliation workflow from 30 minutes to 4 minutes - a measured 7.5x speedup."
-  }, {
-    icon: lucide_react__WEBPACK_IMPORTED_MODULE_1__["default"],
-    title: "Secure Multi-Cloud",
-    description: "Delivered PCI-DSS tokenization and cryptographic key lifecycle solutions across OCI, AWS, GCP, and Azure."
-  }, {
-    icon: lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"],
-    title: "Technical Leadership",
-    description: "Leads a 9-engineer team and owns production delivery, migrations, monitoring, and incident response for banking clients."
-  }];
-  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("section", {
-    id: "about",
-    className: "py-20 bg-zinc-950",
-    "x-file-name": "About",
-    "x-line-number": "31",
-    "x-column": "4",
-    "x-component": "section",
-    "x-id": "About_31_4",
-    "x-dynamic": "false",
-    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("div", {
-      className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
-      "x-file-name": "About",
-      "x-line-number": "32",
-      "x-column": "6",
-      "x-component": "div",
-      "x-id": "About_32_6",
-      "x-dynamic": "false",
-      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("div", {
-        className: "text-center mb-16",
-        "x-file-name": "About",
-        "x-line-number": "33",
-        "x-column": "8",
-        "x-component": "div",
-        "x-id": "About_33_8",
-        "x-dynamic": "false",
-        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("h2", {
-          className: "text-3xl sm:text-4xl lg:text-5xl font-bold mb-4",
-          "x-file-name": "About",
-          "x-line-number": "34",
-          "x-column": "10",
-          "x-component": "h2",
-          "x-id": "About_34_10",
-          "x-dynamic": "false",
-          children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("span", {
-            className: "bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent",
-            "x-file-name": "About",
-            "x-line-number": "35",
-            "x-column": "12",
-            "x-component": "span",
-            "x-id": "About_35_12",
-            "x-dynamic": "false",
-            children: "About Me"
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 35,
-            columnNumber: 13
-          }, undefined)
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 34,
-          columnNumber: 11
-        }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("p", {
-          className: "text-zinc-400 text-lg max-w-3xl mx-auto",
-          "x-file-name": "About",
-          "x-line-number": "39",
-          "x-column": "10",
-          "x-component": "p",
-          "x-id": "About_39_10",
-          "x-dynamic": "false",
-          children: "Building secure, high-performance fintech platforms with measurable business impact"
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 39,
-          columnNumber: 11
-        }, undefined)]
-      }, void 0, true, {
-        fileName: _jsxFileName,
-        lineNumber: 33,
-        columnNumber: 9
-      }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("div", {
-        className: "grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16",
-        "x-file-name": "About",
-        "x-line-number": "45",
-        "x-column": "8",
-        "x-component": "div",
-        "x-id": "About_45_8",
-        "x-dynamic": "true",
-        "x-source-type": "computed",
-        "x-source-editable": "false",
-        children: _mock__WEBPACK_IMPORTED_MODULE_6__.stats.map((stat, index) => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(_ui_card__WEBPACK_IMPORTED_MODULE_5__.Card, {
-          className: "bg-zinc-900/50 border-zinc-800/50 backdrop-blur-sm hover:bg-zinc-900/70 hover:border-emerald-500/30 transition-all duration-300 hover:scale-105",
-          "x-file-name": "About",
-          "x-line-number": "47",
-          "x-column": "12",
-          "x-component": "Card",
-          "x-id": "About_47_12",
-          "x-dynamic": "true",
-          "x-source-type": "static-imported",
-          "x-source-var": "stats",
-          "x-source-file": "../mock",
-          "x-source-file-abs": "/app/frontend/src/mock.js",
-          "x-source-line": "283",
-          "x-source-editable": "true",
-          "x-array-var": "stats",
-          "x-array-file": "../mock",
-          "x-array-line": "283",
-          "x-array-item-param": "stat",
-          children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(_ui_card__WEBPACK_IMPORTED_MODULE_5__.CardContent, {
-            className: "p-6 text-center",
-            "x-file-name": "About",
-            "x-line-number": "51",
-            "x-column": "14",
-            "x-component": "CardContent",
-            "x-id": "About_51_14",
-            "x-dynamic": "true",
-            "x-excluded": "true",
-            "x-source-type": "static-imported",
-            "x-source-var": "stats",
-            "x-source-file": "../mock",
-            "x-source-file-abs": "/app/frontend/src/mock.js",
-            "x-source-line": "283",
-            "x-source-editable": "true",
-            "x-array-var": "stats",
-            "x-array-file": "../mock",
-            "x-array-line": "283",
-            "x-array-item-param": "stat",
-            children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("div", {
-              className: "text-3xl lg:text-4xl font-bold bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent mb-2",
-              "x-file-name": "About",
-              "x-line-number": "52",
-              "x-column": "16",
-              "x-component": "div",
-              "x-id": "About_52_16",
-              "x-dynamic": "true",
-              "x-source-type": "static-imported",
-              "x-source-var": "stats",
-              "x-source-file": "../mock",
-              "x-source-file-abs": "/app/frontend/src/mock.js",
-              "x-source-line": "283",
-              "x-source-path": "value",
-              "x-source-editable": "true",
-              "x-array-var": "stats",
-              "x-array-file": "../mock",
-              "x-array-line": "283",
-              "x-array-item-param": "stat",
-              children: stat.value
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 52,
-              columnNumber: 17
-            }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("div", {
-              className: "text-zinc-400 text-sm",
-              "x-file-name": "About",
-              "x-line-number": "55",
-              "x-column": "16",
-              "x-component": "div",
-              "x-id": "About_55_16",
-              "x-dynamic": "true",
-              "x-source-type": "static-imported",
-              "x-source-var": "stats",
-              "x-source-file": "../mock",
-              "x-source-file-abs": "/app/frontend/src/mock.js",
-              "x-source-line": "283",
-              "x-source-path": "label",
-              "x-source-editable": "true",
-              "x-array-var": "stats",
-              "x-array-file": "../mock",
-              "x-array-line": "283",
-              "x-array-item-param": "stat",
-              children: stat.label
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 55,
-              columnNumber: 17
-            }, undefined)]
-          }, void 0, true, {
-            fileName: _jsxFileName,
-            lineNumber: 51,
-            columnNumber: 15
-          }, undefined)
-        }, index, false, {
-          fileName: _jsxFileName,
-          lineNumber: 47,
-          columnNumber: 13
-        }, undefined))
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 45,
-        columnNumber: 9
-      }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("div", {
-        className: "grid md:grid-cols-2 gap-6",
-        "x-file-name": "About",
-        "x-line-number": "62",
-        "x-column": "8",
-        "x-component": "div",
-        "x-id": "About_62_8",
-        "x-dynamic": "true",
-        "x-source-type": "computed",
-        "x-source-editable": "false",
-        children: highlights.map((highlight, index) => {
-          const Icon = highlight.icon;
-          return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(_ui_card__WEBPACK_IMPORTED_MODULE_5__.Card, {
-            className: "bg-gradient-to-br from-zinc-900/80 to-zinc-900/40 border-zinc-800/50 backdrop-blur-sm hover:border-emerald-500/30 transition-all duration-300 group",
-            "x-file-name": "About",
-            "x-line-number": "66",
-            "x-column": "14",
-            "x-component": "Card",
-            "x-id": "About_66_14",
-            "x-dynamic": "true",
-            "x-source-type": "static-imported",
-            "x-source-var": "highlights",
-            "x-source-file-abs": "/app/frontend/src/components/About.jsx",
-            "x-source-line": "7",
-            "x-source-editable": "true",
-            "x-array-var": "highlights",
-            "x-array-line": "7",
-            "x-array-item-param": "highlight",
-            children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(_ui_card__WEBPACK_IMPORTED_MODULE_5__.CardContent, {
-              className: "p-6",
-              "x-file-name": "About",
-              "x-line-number": "70",
-              "x-column": "16",
-              "x-component": "CardContent",
-              "x-id": "About_70_16",
-              "x-dynamic": "true",
-              "x-excluded": "true",
-              "x-source-type": "static-imported",
-              "x-source-var": "highlights",
-              "x-source-file-abs": "/app/frontend/src/components/About.jsx",
-              "x-source-line": "7",
-              "x-source-editable": "true",
-              "x-array-var": "highlights",
-              "x-array-line": "7",
-              "x-array-item-param": "highlight",
-              children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("div", {
-                className: "flex items-start gap-4",
-                "x-file-name": "About",
-                "x-line-number": "71",
-                "x-column": "18",
-                "x-component": "div",
-                "x-id": "About_71_18",
-                "x-dynamic": "false",
-                children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("div", {
-                  className: "p-3 bg-emerald-500/10 rounded-lg group-hover:bg-emerald-500/20 transition-colors duration-300",
-                  "x-file-name": "About",
-                  "x-line-number": "72",
-                  "x-column": "20",
-                  "x-component": "div",
-                  "x-id": "About_72_20",
-                  "x-dynamic": "false",
-                  children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(Icon, {
-                    className: "h-6 w-6 text-emerald-400",
-                    "x-file-name": "About",
-                    "x-line-number": "73",
-                    "x-column": "22",
-                    "x-component": "Icon",
-                    "x-id": "About_73_22",
-                    "x-dynamic": "true",
-                    "x-source-type": "static-imported",
-                    "x-source-var": "highlights",
-                    "x-source-file-abs": "/app/frontend/src/components/About.jsx",
-                    "x-source-line": "7",
-                    "x-source-editable": "true",
-                    "x-array-var": "highlights",
-                    "x-array-line": "7",
-                    "x-array-item-param": "highlight"
-                  }, void 0, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 73,
-                    columnNumber: 23
-                  }, undefined)
-                }, void 0, false, {
-                  fileName: _jsxFileName,
-                  lineNumber: 72,
-                  columnNumber: 21
-                }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("div", {
-                  className: "flex-1",
-                  "x-file-name": "About",
-                  "x-line-number": "75",
-                  "x-column": "20",
-                  "x-component": "div",
-                  "x-id": "About_75_20",
-                  "x-dynamic": "false",
-                  children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("h3", {
-                    className: "text-xl font-semibold text-zinc-100 mb-2",
-                    "x-file-name": "About",
-                    "x-line-number": "76",
-                    "x-column": "22",
-                    "x-component": "h3",
-                    "x-id": "About_76_22",
-                    "x-dynamic": "true",
-                    "x-source-type": "static-imported",
-                    "x-source-var": "highlights",
-                    "x-source-file-abs": "/app/frontend/src/components/About.jsx",
-                    "x-source-line": "7",
-                    "x-source-path": "title",
-                    "x-source-editable": "true",
-                    "x-array-var": "highlights",
-                    "x-array-line": "7",
-                    "x-array-item-param": "highlight",
-                    children: highlight.title
-                  }, void 0, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 76,
-                    columnNumber: 23
-                  }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("p", {
-                    className: "text-zinc-400 leading-relaxed",
-                    "x-file-name": "About",
-                    "x-line-number": "79",
-                    "x-column": "22",
-                    "x-component": "p",
-                    "x-id": "About_79_22",
-                    "x-dynamic": "true",
-                    "x-source-type": "static-imported",
-                    "x-source-var": "highlights",
-                    "x-source-file-abs": "/app/frontend/src/components/About.jsx",
-                    "x-source-line": "7",
-                    "x-source-path": "description",
-                    "x-source-editable": "true",
-                    "x-array-var": "highlights",
-                    "x-array-line": "7",
-                    "x-array-item-param": "highlight",
-                    children: highlight.description
-                  }, void 0, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 79,
-                    columnNumber: 23
-                  }, undefined)]
-                }, void 0, true, {
-                  fileName: _jsxFileName,
-                  lineNumber: 75,
-                  columnNumber: 21
-                }, undefined)]
-              }, void 0, true, {
-                fileName: _jsxFileName,
-                lineNumber: 71,
-                columnNumber: 19
-              }, undefined)
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 70,
-              columnNumber: 17
-            }, undefined)
-          }, index, false, {
-            fileName: _jsxFileName,
-            lineNumber: 66,
-            columnNumber: 15
-          }, undefined);
-        })
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 62,
-        columnNumber: 9
-      }, undefined)]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 32,
-      columnNumber: 7
-    }, undefined)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 31,
-    columnNumber: 5
-  }, undefined);
+  const React = react__WEBPACK_IMPORTED_MODULE_0__;
+  const h = React.createElement;
+  const rootRef = React.useRef(null);
+  const [Photo, setPhoto] = React.useState(null);
+  React.useEffect(() => {
+    const root = rootRef.current;
+    let cancelled = false;
+    let inView = false;
+    let loading = false;
+    const ready = () => { if (!cancelled && window.createPortfolioPhoto) setPhoto(() => window.createPortfolioPhoto(React)); };
+    const load = () => {
+      if (!inView || loading) return;
+      loading = true;
+      if (window.createPortfolioPhoto) { ready(); return; }
+      let script = document.getElementById('profile-lanyard-runtime');
+      if (!script) {
+        script = document.createElement('script');
+        script.id = 'profile-lanyard-runtime';
+        script.src = 'js/profile-lanyard.js?v=20261018-interactive-lanyard';
+        script.async = true;
+        script.addEventListener('load', ready, { once: true });
+        document.head.appendChild(script);
+      } else script.addEventListener('load', ready, { once: true });
+    };
+    const observer = new IntersectionObserver(entries => {
+      inView = entries.some(entry => entry.isIntersecting);
+      if (inView) load();
+    }, { rootMargin: '250px' });
+    observer.observe(root);
+    return () => { cancelled = true; observer.disconnect(); };
+  }, []);
+  const highlights = [
+    ['FinTech & Payments', 'Payments, reconciliation, and core banking, from design through production support.'],
+    ['Performance Engineering', 'In-memory matching, parallel batch processing, and distributed tracing.'],
+    ['Secure Multi-Cloud', 'Encryption, secrets, and key lifecycle operations across four cloud platforms.'],
+    ['Technical Leadership', 'Leading a 6-engineer team across releases, migrations, and production incidents.']
+  ];
+  return h('section', { id: 'about', ref: rootRef, className: 'py-20', 'aria-labelledby': 'about-heading' },
+    h('div', { className: 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8' },
+      h('div', { className: 'about-profile-layout' },
+        h('div', { className: 'about-profile-photo' }, Photo ? h(Photo) : h('figure', { className: 'profile-placeholder' },
+          h('img', { src: 'resource/profile/ravi-singh.png', alt: 'Ravi Singh', width: 200, height: 265, loading: 'lazy' }),
+          h('figcaption', null, 'Ravi Singh', h('small', null, 'JAVA BACKEND ENGINEER · TECH LEAD'))
+        )),
+        h('div', null,
+          h('div', { className: 'about-profile-heading' }, h('h2', { id: 'about-heading' }, 'About Me'),
+            h('p', null, 'I build secure, high-performance systems for banking and fintech. My work spans Java backend services, payment security, reconciliation, and production delivery.'),
+            h('div', { className: 'about-profile-meta' }, 'Bengaluru, India · Senior Backend Engineer / Java Tech Lead · 30-day notice')
+          ),
+          h('div', { className: 'about-profile-highlights' }, highlights.map(([title, description]) => h('div', { key: title, className: 'about-profile-highlight' }, h('h3', null, title), h('p', null, description))))
+        )
+      ),
+      h('div', { className: 'about-profile-stats' }, _mock__WEBPACK_IMPORTED_MODULE_6__.stats.map(stat => h('div', { key: stat.label, className: 'about-profile-stat', 'x-component': 'Card' }, h('strong', null, stat.value), h('span', null, stat.label))))
+    )
+  );
 };
 _c = About;
 var _c;
@@ -39633,7 +39317,7 @@ const Contact = () => {
               "x-component": "p",
               "x-id": "Contact_105_14",
               "x-dynamic": "false",
-              children: "Available for contract work, consulting, and full-time positions in fintech and enterprise software development."
+              children: "Target roles: Senior Backend Engineer / Java Tech Lead. Bengaluru, India. Notice period: 30 days. Contact me to discuss a role, consulting engagement, or project."
             }, void 0, false, {
               fileName: _jsxFileName,
               lineNumber: 105,
@@ -41788,89 +41472,13 @@ const Hero = () => {
           "x-component": "div",
           "x-id": "Hero_47_10",
           "x-dynamic": "false",
-          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(_ui_button__WEBPACK_IMPORTED_MODULE_5__.Button, {
-            size: "lg",
-            className: "bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white shadow-lg shadow-emerald-500/30 hover:shadow-emerald-500/50 transition-all duration-300 hover:scale-105",
-            onClick: () => window.open(_mock__WEBPACK_IMPORTED_MODULE_6__.personalInfo.github, '_blank'),
-            "x-file-name": "Hero",
-            "x-line-number": "48",
-            "x-column": "12",
-            "x-component": "Button",
-            "x-id": "Hero_48_12",
-            "x-dynamic": "false",
-            children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
-              className: "mr-2 h-5 w-5",
-              "x-file-name": "Hero",
-              "x-line-number": "53",
-              "x-column": "14",
-              "x-component": "Github",
-              "x-id": "Hero_53_14",
-              "x-dynamic": "false"
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 53,
-              columnNumber: 15
-            }, undefined), "GitHub"]
-          }, void 0, true, {
-            fileName: _jsxFileName,
-            lineNumber: 48,
-            columnNumber: 13
-          }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(_ui_button__WEBPACK_IMPORTED_MODULE_5__.Button, {
-            size: "lg",
-            className: "bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white shadow-lg shadow-cyan-500/30 hover:shadow-cyan-500/50 transition-all duration-300 hover:scale-105",
-            onClick: () => window.open(_mock__WEBPACK_IMPORTED_MODULE_6__.personalInfo.linkedin, '_blank'),
-            "x-file-name": "Hero",
-            "x-line-number": "56",
-            "x-column": "12",
-            "x-component": "Button",
-            "x-id": "Hero_56_12",
-            "x-dynamic": "false",
-            children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
-              className: "mr-2 h-5 w-5",
-              "x-file-name": "Hero",
-              "x-line-number": "61",
-              "x-column": "14",
-              "x-component": "Linkedin",
-              "x-id": "Hero_61_14",
-              "x-dynamic": "false"
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 61,
-              columnNumber: 15
-            }, undefined), "LinkedIn"]
-          }, void 0, true, {
-            fileName: _jsxFileName,
-            lineNumber: 56,
-            columnNumber: 13
-          }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(_ui_button__WEBPACK_IMPORTED_MODULE_5__.Button, {
-            size: "lg",
-            variant: "outline",
-            className: "border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/10 hover:border-emerald-500/50 transition-all duration-300 hover:scale-105",
-            onClick: () => window.open(_mock__WEBPACK_IMPORTED_MODULE_6__.personalInfo.resume, '_blank'),
-            "x-file-name": "Hero",
-            "x-line-number": "64",
-            "x-column": "12",
-            "x-component": "Button",
-            "x-id": "Hero_64_12",
-            "x-dynamic": "false",
-            children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
-              className: "mr-2 h-5 w-5",
-              "x-file-name": "Hero",
-              "x-line-number": "70",
-              "x-column": "14",
-              "x-component": "FileText",
-              "x-id": "Hero_70_14",
-              "x-dynamic": "false"
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 70,
-              columnNumber: 15
-            }, undefined), "Resume"]
-          }, void 0, true, {
-            fileName: _jsxFileName,
-            lineNumber: 64,
-            columnNumber: 13
-          }, undefined)]
+          children: [
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement('p', { key: 'availability', className: 'hero-hiring-meta' }, 'Senior Backend Engineer / Java Tech Lead · Bengaluru · 30-day notice'),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement('a', { key: 'contact', href: '#contact', className: 'hero-action hero-action--primary' }, 'Contact Me'),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement('a', { key: 'resume', href: _mock__WEBPACK_IMPORTED_MODULE_6__.personalInfo.resume, download: 'Ravi-Singh-Resume.pdf', className: 'hero-action hero-action--resume' }, 'Download Resume'),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement('a', { key: 'github', href: _mock__WEBPACK_IMPORTED_MODULE_6__.personalInfo.github, target: '_blank', rel: 'noopener noreferrer', className: 'hero-action hero-action--social' }, 'GitHub ↗'),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement('a', { key: 'linkedin', href: _mock__WEBPACK_IMPORTED_MODULE_6__.personalInfo.linkedin, target: '_blank', rel: 'noopener noreferrer', className: 'hero-action hero-action--social' }, 'LinkedIn ↗')
+          ]
         }, void 0, true, {
           fileName: _jsxFileName,
           lineNumber: 47,
@@ -41987,519 +41595,53 @@ var _jsxFileName = "/app/frontend/src/components/Projects.jsx";
 
 
 const Projects = () => {
-  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("section", {
-    id: "projects",
-    className: "py-20 bg-zinc-950",
-    "x-file-name": "Projects",
-    "x-line-number": "10",
-    "x-column": "4",
-    "x-component": "section",
-    "x-id": "Projects_10_4",
-    "x-dynamic": "false",
-    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
-      className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
-      "x-file-name": "Projects",
-      "x-line-number": "11",
-      "x-column": "6",
-      "x-component": "div",
-      "x-id": "Projects_11_6",
-      "x-dynamic": "false",
-      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
-        className: "text-center mb-16",
-        "x-file-name": "Projects",
-        "x-line-number": "12",
-        "x-column": "8",
-        "x-component": "div",
-        "x-id": "Projects_12_8",
-        "x-dynamic": "false",
-        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("h2", {
-          className: "text-3xl sm:text-4xl lg:text-5xl font-bold mb-4",
-          "x-file-name": "Projects",
-          "x-line-number": "13",
-          "x-column": "10",
-          "x-component": "h2",
-          "x-id": "Projects_13_10",
-          "x-dynamic": "false",
-          children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("span", {
-            className: "bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent",
-            "x-file-name": "Projects",
-            "x-line-number": "14",
-            "x-column": "12",
-            "x-component": "span",
-            "x-id": "Projects_14_12",
-            "x-dynamic": "false",
-            children: "Featured Projects"
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 14,
-            columnNumber: 13
-          }, undefined)
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 13,
-          columnNumber: 11
-        }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("p", {
-          className: "text-zinc-400 text-lg max-w-3xl mx-auto",
-          "x-file-name": "Projects",
-          "x-line-number": "18",
-          "x-column": "10",
-          "x-component": "p",
-          "x-id": "Projects_18_10",
-          "x-dynamic": "false",
-          children: "Enterprise-grade systems powering modern fintech operations"
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 18,
-          columnNumber: 11
-        }, undefined)]
-      }, void 0, true, {
-        fileName: _jsxFileName,
-        lineNumber: 12,
-        columnNumber: 9
-      }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
-        className: "space-y-8",
-        "x-file-name": "Projects",
-        "x-line-number": "23",
-        "x-column": "8",
-        "x-component": "div",
-        "x-id": "Projects_23_8",
-        "x-dynamic": "true",
-        "x-source-type": "computed",
-        "x-source-editable": "false",
-        children: _mock__WEBPACK_IMPORTED_MODULE_7__.projects.map((project, index) => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)(_ui_card__WEBPACK_IMPORTED_MODULE_1__.Card, {
-          className: "bg-gradient-to-br from-zinc-900/80 to-zinc-900/40 border-zinc-800/50 backdrop-blur-sm hover:border-emerald-500/30 transition-all duration-300 group",
-          "x-file-name": "Projects",
-          "x-line-number": "25",
-          "x-column": "12",
-          "x-component": "Card",
-          "x-id": "Projects_25_12",
-          "x-dynamic": "true",
-          "x-source-type": "static-imported",
-          "x-source-var": "projects",
-          "x-source-file": "../mock",
-          "x-source-file-abs": "/app/frontend/src/mock.js",
-          "x-source-line": "58",
-          "x-source-editable": "true",
-          "x-array-var": "projects",
-          "x-array-file": "../mock",
-          "x-array-line": "58",
-          "x-array-item-param": "project",
-          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)(_ui_card__WEBPACK_IMPORTED_MODULE_1__.CardHeader, {
-            "x-file-name": "Projects",
-            "x-line-number": "29",
-            "x-column": "14",
-            "x-component": "CardHeader",
-            "x-id": "Projects_29_14",
-            "x-dynamic": "true",
-            "x-source-type": "static-imported",
-            "x-source-var": "projects",
-            "x-source-file": "../mock",
-            "x-source-file-abs": "/app/frontend/src/mock.js",
-            "x-source-line": "58",
-            "x-source-editable": "true",
-            "x-array-var": "projects",
-            "x-array-file": "../mock",
-            "x-array-line": "58",
-            "x-array-item-param": "project",
-            children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
-              className: "flex items-start justify-between gap-4",
-              "x-file-name": "Projects",
-              "x-line-number": "30",
-              "x-column": "16",
-              "x-component": "div",
-              "x-id": "Projects_30_16",
-              "x-dynamic": "false",
-              children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
-                className: "flex-1",
-                "x-file-name": "Projects",
-                "x-line-number": "31",
-                "x-column": "18",
-                "x-component": "div",
-                "x-id": "Projects_31_18",
-                "x-dynamic": "false",
-                children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)(_ui_card__WEBPACK_IMPORTED_MODULE_1__.CardTitle, {
-                  className: "text-2xl text-zinc-100 mb-3 group-hover:text-emerald-400 transition-colors duration-300",
-                  "x-file-name": "Projects",
-                  "x-line-number": "32",
-                  "x-column": "20",
-                  "x-component": "CardTitle",
-                  "x-id": "Projects_32_20",
-                  "x-dynamic": "true",
-                  "x-source-type": "static-imported",
-                  "x-source-var": "projects",
-                  "x-source-file": "../mock",
-                  "x-source-file-abs": "/app/frontend/src/mock.js",
-                  "x-source-line": "58",
-                  "x-source-path": "title",
-                  "x-source-editable": "true",
-                  "x-array-var": "projects",
-                  "x-array-file": "../mock",
-                  "x-array-line": "58",
-                  "x-array-item-param": "project",
-                  children: project.title
-                }, void 0, false, {
-                  fileName: _jsxFileName,
-                  lineNumber: 32,
-                  columnNumber: 21
-                }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)(_ui_card__WEBPACK_IMPORTED_MODULE_1__.CardDescription, {
-                  className: "text-zinc-400 text-base leading-relaxed",
-                  "x-file-name": "Projects",
-                  "x-line-number": "35",
-                  "x-column": "20",
-                  "x-component": "CardDescription",
-                  "x-id": "Projects_35_20",
-                  "x-dynamic": "true",
-                  "x-source-type": "static-imported",
-                  "x-source-var": "projects",
-                  "x-source-file": "../mock",
-                  "x-source-file-abs": "/app/frontend/src/mock.js",
-                  "x-source-line": "58",
-                  "x-source-path": "description",
-                  "x-source-editable": "true",
-                  "x-array-var": "projects",
-                  "x-array-file": "../mock",
-                  "x-array-line": "58",
-                  "x-array-item-param": "project",
-                  children: project.description
-                }, void 0, false, {
-                  fileName: _jsxFileName,
-                  lineNumber: 35,
-                  columnNumber: 21
-                }, undefined)]
-              }, void 0, true, {
-                fileName: _jsxFileName,
-                lineNumber: 31,
-                columnNumber: 19
-              }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
-                className: "flex gap-2",
-                "x-file-name": "Projects",
-                "x-line-number": "39",
-                "x-column": "18",
-                "x-component": "div",
-                "x-id": "Projects_39_18",
-                "x-dynamic": "false",
-                children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)(_ui_button__WEBPACK_IMPORTED_MODULE_2__.Button, {
-                  variant: "ghost",
-                  size: "icon",
-                  className: "text-zinc-400 hover:text-emerald-400 hover:bg-emerald-400/10",
-                  onClick: () => window.open(project.github, '_blank'),
-                  "x-file-name": "Projects",
-                  "x-line-number": "40",
-                  "x-column": "20",
-                  "x-component": "Button",
-                  "x-id": "Projects_40_20",
-                  "x-dynamic": "true",
-                  "x-source-type": "static-imported",
-                  "x-source-var": "projects",
-                  "x-source-file": "../mock",
-                  "x-source-file-abs": "/app/frontend/src/mock.js",
-                  "x-source-line": "58",
-                  "x-source-editable": "true",
-                  "x-array-var": "projects",
-                  "x-array-file": "../mock",
-                  "x-array-line": "58",
-                  "x-array-item-param": "project",
-                  children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                    className: "h-5 w-5",
-                    "x-file-name": "Projects",
-                    "x-line-number": "46",
-                    "x-column": "22",
-                    "x-component": "Github",
-                    "x-id": "Projects_46_22",
-                    "x-dynamic": "true",
-                    "x-source-type": "static-imported",
-                    "x-source-var": "projects",
-                    "x-source-file": "../mock",
-                    "x-source-file-abs": "/app/frontend/src/mock.js",
-                    "x-source-line": "58",
-                    "x-source-editable": "true",
-                    "x-array-var": "projects",
-                    "x-array-file": "../mock",
-                    "x-array-line": "58",
-                    "x-array-item-param": "project"
-                  }, void 0, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 46,
-                    columnNumber: 23
-                  }, undefined)
-                }, void 0, false, {
-                  fileName: _jsxFileName,
-                  lineNumber: 40,
-                  columnNumber: 21
-                }, undefined)]
-              }, void 0, true, {
-                fileName: _jsxFileName,
-                lineNumber: 39,
-                columnNumber: 19
-              }, undefined)]
-            }, void 0, true, {
-              fileName: _jsxFileName,
-              lineNumber: 30,
-              columnNumber: 17
-            }, undefined)
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 29,
-            columnNumber: 15
-          }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)(_ui_card__WEBPACK_IMPORTED_MODULE_1__.CardContent, {
-            "x-file-name": "Projects",
-            "x-line-number": "59",
-            "x-column": "14",
-            "x-component": "CardContent",
-            "x-id": "Projects_59_14",
-            "x-dynamic": "true",
-            "x-excluded": "true",
-            "x-source-type": "static-imported",
-            "x-source-var": "projects",
-            "x-source-file": "../mock",
-            "x-source-file-abs": "/app/frontend/src/mock.js",
-            "x-source-line": "58",
-            "x-source-editable": "true",
-            "x-array-var": "projects",
-            "x-array-file": "../mock",
-            "x-array-line": "58",
-            "x-array-item-param": "project",
-            children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
-              className: "space-y-6",
-              "x-file-name": "Projects",
-              "x-line-number": "60",
-              "x-column": "16",
-              "x-component": "div",
-              "x-id": "Projects_60_16",
-              "x-dynamic": "false",
-              children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
-                "x-file-name": "Projects",
-                "x-line-number": "62",
-                "x-column": "18",
-                "x-component": "div",
-                "x-id": "Projects_62_18",
-                "x-dynamic": "false",
-                children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("h4", {
-                  className: "text-sm font-semibold text-zinc-300 mb-3 flex items-center gap-2",
-                  "x-file-name": "Projects",
-                  "x-line-number": "63",
-                  "x-column": "20",
-                  "x-component": "h4",
-                  "x-id": "Projects_63_20",
-                  "x-dynamic": "false",
-                  children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
-                    className: "h-4 w-4 text-emerald-400",
-                    "x-file-name": "Projects",
-                    "x-line-number": "64",
-                    "x-column": "22",
-                    "x-component": "Cpu",
-                    "x-id": "Projects_64_22",
-                    "x-dynamic": "true",
-                    "x-source-type": "static-imported",
-                    "x-source-var": "projects",
-                    "x-source-file": "../mock",
-                    "x-source-file-abs": "/app/frontend/src/mock.js",
-                    "x-source-line": "58",
-                    "x-source-editable": "true",
-                    "x-array-var": "projects",
-                    "x-array-file": "../mock",
-                    "x-array-line": "58",
-                    "x-array-item-param": "project"
-                  }, void 0, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 64,
-                    columnNumber: 23
-                  }, undefined), "Tech Stack"]
-                }, void 0, true, {
-                  fileName: _jsxFileName,
-                  lineNumber: 63,
-                  columnNumber: 21
-                }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
-                  className: "flex flex-wrap gap-2",
-                  "x-file-name": "Projects",
-                  "x-line-number": "67",
-                  "x-column": "20",
-                  "x-component": "div",
-                  "x-id": "Projects_67_20",
-                  "x-dynamic": "true",
-                  "x-source-type": "computed",
-                  "x-source-editable": "false",
-                  children: project.tech.map((tech, i) => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)(_ui_badge__WEBPACK_IMPORTED_MODULE_3__.Badge, {
-                    variant: "secondary",
-                    className: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20 hover:bg-emerald-500/20 transition-colors duration-300",
-                    "x-file-name": "Projects",
-                    "x-line-number": "69",
-                    "x-column": "24",
-                    "x-component": "Badge",
-                    "x-id": "Projects_69_24",
-                    "x-dynamic": "true",
-                    "x-source-type": "static-imported",
-                    "x-source-var": "project",
-                    "x-source-editable": "false",
-                    "x-array-var": "project",
-                    "x-array-item-param": "tech",
-                    children: tech
-                  }, i, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 69,
-                    columnNumber: 25
-                  }, undefined))
-                }, void 0, false, {
-                  fileName: _jsxFileName,
-                  lineNumber: 67,
-                  columnNumber: 21
-                }, undefined)]
-              }, void 0, true, {
-                fileName: _jsxFileName,
-                lineNumber: 62,
-                columnNumber: 19
-              }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
-                "x-file-name": "Projects",
-                "x-line-number": "81",
-                "x-column": "18",
-                "x-component": "div",
-                "x-id": "Projects_81_18",
-                "x-dynamic": "false",
-                children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("h4", {
-                  className: "text-sm font-semibold text-zinc-300 mb-3",
-                  "x-file-name": "Projects",
-                  "x-line-number": "82",
-                  "x-column": "20",
-                  "x-component": "h4",
-                  "x-id": "Projects_82_20",
-                  "x-dynamic": "false",
-                  children: "Key Features"
-                }, void 0, false, {
-                  fileName: _jsxFileName,
-                  lineNumber: 82,
-                  columnNumber: 21
-                }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("ul", {
-                  className: "grid md:grid-cols-2 gap-2",
-                  "x-file-name": "Projects",
-                  "x-line-number": "83",
-                  "x-column": "20",
-                  "x-component": "ul",
-                  "x-id": "Projects_83_20",
-                  "x-dynamic": "true",
-                  "x-source-type": "computed",
-                  "x-source-editable": "false",
-                  children: project.features.map((feature, i) => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("li", {
-                    className: "flex items-start gap-2 text-zinc-400 text-sm",
-                    "x-file-name": "Projects",
-                    "x-line-number": "85",
-                    "x-column": "24",
-                    "x-component": "li",
-                    "x-id": "Projects_85_24",
-                    "x-dynamic": "true",
-                    "x-source-type": "static-imported",
-                    "x-source-var": "project",
-                    "x-source-editable": "false",
-                    "x-array-var": "project",
-                    "x-array-item-param": "feature",
-                    children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("span", {
-                      className: "text-emerald-400 mt-1",
-                      "x-file-name": "Projects",
-                      "x-line-number": "86",
-                      "x-column": "26",
-                      "x-component": "span",
-                      "x-id": "Projects_86_26",
-                      "x-dynamic": "false",
-                      children: "\u2022"
-                    }, void 0, false, {
-                      fileName: _jsxFileName,
-                      lineNumber: 86,
-                      columnNumber: 27
-                    }, undefined), feature]
-                  }, i, true, {
-                    fileName: _jsxFileName,
-                    lineNumber: 85,
-                    columnNumber: 25
-                  }, undefined))
-                }, void 0, false, {
-                  fileName: _jsxFileName,
-                  lineNumber: 83,
-                  columnNumber: 21
-                }, undefined)]
-              }, void 0, true, {
-                fileName: _jsxFileName,
-                lineNumber: 81,
-                columnNumber: 19
-              }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
-                className: "pt-4 border-t border-zinc-800",
-                "x-file-name": "Projects",
-                "x-line-number": "94",
-                "x-column": "18",
-                "x-component": "div",
-                "x-id": "Projects_94_18",
-                "x-dynamic": "false",
-                children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("h4", {
-                  className: "text-sm font-semibold text-zinc-300 mb-2",
-                  "x-file-name": "Projects",
-                  "x-line-number": "95",
-                  "x-column": "20",
-                  "x-component": "h4",
-                  "x-id": "Projects_95_20",
-                  "x-dynamic": "false",
-                  children: "Architecture"
-                }, void 0, false, {
-                  fileName: _jsxFileName,
-                  lineNumber: 95,
-                  columnNumber: 21
-                }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("p", {
-                  className: "text-zinc-400 text-sm leading-relaxed",
-                  "x-file-name": "Projects",
-                  "x-line-number": "96",
-                  "x-column": "20",
-                  "x-component": "p",
-                  "x-id": "Projects_96_20",
-                  "x-dynamic": "true",
-                  "x-source-type": "static-imported",
-                  "x-source-var": "projects",
-                  "x-source-file": "../mock",
-                  "x-source-file-abs": "/app/frontend/src/mock.js",
-                  "x-source-line": "58",
-                  "x-source-path": "architecture",
-                  "x-source-editable": "true",
-                  "x-array-var": "projects",
-                  "x-array-file": "../mock",
-                  "x-array-line": "58",
-                  "x-array-item-param": "project",
-                  children: project.architecture
-                }, void 0, false, {
-                  fileName: _jsxFileName,
-                  lineNumber: 96,
-                  columnNumber: 21
-                }, undefined)]
-              }, void 0, true, {
-                fileName: _jsxFileName,
-                lineNumber: 94,
-                columnNumber: 19
-              }, undefined)]
-            }, void 0, true, {
-              fileName: _jsxFileName,
-              lineNumber: 60,
-              columnNumber: 17
-            }, undefined)
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 59,
-            columnNumber: 15
-          }, undefined)]
-        }, project.id, true, {
-          fileName: _jsxFileName,
-          lineNumber: 25,
-          columnNumber: 13
-        }, undefined))
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 23,
-        columnNumber: 9
-      }, undefined)]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 11,
-      columnNumber: 7
-    }, undefined)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 10,
-    columnNumber: 5
-  }, undefined);
+  const h = react__WEBPACK_IMPORTED_MODULE_0__.createElement;
+  const studies = {"1": {"id": "neopay", "diagram": "resource/case-studies/neopay.svg", "alt": "Order service publishes to Kafka; payment service consumes and publishes a result; order and notification services consume the result. Failed order events go to orders.DLT.", "problem": "How can an order progress through independently running services when messages may be repeated or processing may fail?", "scope": "A three-service learning implementation: order intake and status, simulated payment processing, notification consumption, shared event contracts, and a local Compose runtime.", "decisions": [["Event choreography", "Kafka decouples the services and lets each consumer progress independently. The trade-off is eventual consistency: order state is updated after a result event arrives."], ["Duplicate handling", "The payment handler claims an event ID before processing. Its database transaction supports retrying failed work; duplicate-event tests exercise the intended behavior."], ["Failure recovery", "Transient simulation failures receive three retries before dead-letter routing. Non-retryable input goes directly to orders.DLT. A dead-lettered order can remain pending, so recovery needs an operator workflow."], ["Delivery boundary", "A database transaction and Kafka publication span separate systems. A transactional outbox and recovery testing are future hardening work; this demo does not claim exactly-once business effects."]], "validation": "The repository contains Testcontainers integration scenarios for successful processing, duplicate events, retry exhaustion, poison messages, and notification handling, plus a smoke script. These are verification entry points, not newly executed test results.", "commands": "mvn -q verify\n# For the local demonstration:\nmvn -q -DskipTests package\ndocker compose -f docker/docker-compose.yml up -d --build\nbash scripts/smoke.sh", "demo": "The local order-service UI includes happy, retry-to-DLT, and poison-message presets. After starting the stack, open http://localhost:8081. This is a local demonstration, not a hosted service.", "evidence": [["Payment handler", "https://github.com/raviaicode/neopay/blob/f614881e769f12cbd5b85992eb676298c6be25ea/payment-service/src/main/java/ai/osfin/eventdriven/payment/service/PaymentHandler.java"], ["Retry / DLT test", "https://github.com/raviaicode/neopay/blob/f614881e769f12cbd5b85992eb676298c6be25ea/payment-service/src/test/java/ai/osfin/eventdriven/payment/PaymentRetryDltIT.java"], ["Duplicate-event test", "https://github.com/raviaicode/neopay/blob/f614881e769f12cbd5b85992eb676298c6be25ea/payment-service/src/test/java/ai/osfin/eventdriven/payment/PaymentIdempotencyIT.java"], ["Smoke test", "https://github.com/raviaicode/neopay/blob/f614881e769f12cbd5b85992eb676298c6be25ea/scripts/smoke.sh"], ["Demo walkthrough", "https://github.com/raviaicode/neopay/blob/f614881e769f12cbd5b85992eb676298c6be25ea/docs/testing.md"]]}, "2": {"id": "upi-sim", "diagram": "resource/case-studies/upi-sim.svg", "alt": "Authenticated transfer request passes to TransferService, which checks the reference and locks wallets; a PostgreSQL transaction updates balances and writes a debit and credit ledger entry.", "problem": "How can a simulated wallet transfer preserve money when clients retry requests or several transfers compete for the same balance?", "scope": "A Spring Boot backend covering authentication, virtual payment addresses, wallets, transfers, and ledger entries. It models payment primitives using simulated funds.", "decisions": [["Ledger and balances", "Each transfer writes a debit and credit alongside wallet updates in one database transaction. The ledger records the movement; wallet balances provide a convenient read model."], ["Integer money", "Amounts use integer paise, avoiding floating-point arithmetic in the transfer path."], ["Locking strategy", "The implementation locks wallets by ascending user ID. This is straightforward for a small system, but serializes competing transfers and needs load and deadlock testing."], ["Repeat requests", "A unique clientRef and an existing-transaction lookup implement the intended retry behavior. Concurrent duplicate references and caller scoping need explicit validation before this is treated as a production guarantee."]], "validation": "TransferServiceIT includes scenarios for ledger balance, repeat requests, insufficient balance, and ten competing transfers. The seed helper currently slices nine characters from an eight-character suffix; repair that fixture before running the suite. No passing integration result is claimed here.", "commands": "docker compose up -d postgres\ncd backend\n# After correcting the test fixture; Docker is required:\nmvn -Dtest=TransferServiceIT test\n# Start the backend:\nmvn spring-boot:run", "demo": "The repository provides API examples for registration, wallets, and transfers. It does not integrate with NPCI or bank settlement; the frontend is documented as pending.", "evidence": [["Transfer implementation", "https://github.com/raviaicode/upi-sim/blob/847a7a164ec78a420e7c0c1f1deb89057efd4f9d/backend/src/main/java/io/neocore/upisim/transfer/TransferService.java"], ["Integration test scenarios", "https://github.com/raviaicode/upi-sim/blob/847a7a164ec78a420e7c0c1f1deb89057efd4f9d/backend/src/test/java/io/neocore/upisim/transfer/TransferServiceIT.java"], ["Schema and constraints", "https://github.com/raviaicode/upi-sim/blob/847a7a164ec78a420e7c0c1f1deb89057efd4f9d/backend/src/main/resources/db/migration/V1__init.sql"], ["Setup and API examples", "https://github.com/raviaicode/upi-sim/blob/847a7a164ec78a420e7c0c1f1deb89057efd4f9d/README.md"]]}};
+  const order = [1, 2, 5, 3];
+  const list = [..._mock__WEBPACK_IMPORTED_MODULE_7__.projects].sort((a, b) => order.indexOf(a.id) - order.indexOf(b.id));
+  const link = (label, href, key) => h('a', { key: key || label, href, target: '_blank', rel: 'noopener noreferrer', className: 'project-evidence-link' }, label + ' ↗');
+  const paragraph = (heading, text) => h('div', { className: 'case-study-block', key: heading }, h('h4', null, heading), h('p', null, text));
+  return h('section', { id: 'projects', className: 'py-20', 'aria-labelledby': 'projects-heading' },
+    h('div', { className: 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8' },
+      h('div', { className: 'project-section-heading' },
+        h('h2', { id: 'projects-heading' }, 'Featured Projects'),
+        h('p', null, 'Engineering projects exploring payments, distributed systems, and AI.')
+      ),
+      h('div', { className: 'review-project-grid' }, list.map(project => {
+        const study = studies[project.id];
+        return h('article', { key: project.id, className: 'review-project-card', 'x-component': 'Card', 'aria-labelledby': `project-${project.id}` },
+          h('div', { className: 'review-project-header' },
+            h('div', null, h('span', { className: 'project-status' }, project.status), h('h3', { id: `project-${project.id}` }, project.title)),
+            link('GitHub', project.github)
+          ),
+          h('p', { className: 'review-project-description' }, project.description),
+          h('ul', { className: 'review-project-tech', 'aria-label': 'Technology stack' }, project.tech.map(tech => h('li', { key: tech }, tech))),
+          h('details', { id: study ? `case-study-${study.id}` : `project-details-${project.id}`, className: 'project-case-study' },
+            h('summary', null, study ? 'Read engineering case study' : 'View implementation scope'),
+            study ? h('div', { className: 'case-study-content' },
+              paragraph('Problem', study.problem),
+              paragraph('Implementation scope', study.scope),
+              h('figure', { className: 'case-study-diagram' }, h('img', { src: study.diagram, alt: study.alt, loading: 'lazy', width: 900, height: 220 }), h('figcaption', null, 'Implementation flow · schematic, not live telemetry')),
+              h('div', { className: 'case-study-decisions' }, study.decisions.map(([title, text]) => paragraph(title, text))),
+              paragraph('Validation and current limits', study.validation),
+              paragraph('Reproduce the demonstration', study.demo),
+              h('pre', null, h('code', null, study.commands)),
+              h('div', { className: 'project-evidence-links', 'aria-label': 'Implementation evidence' }, study.evidence.map(([label, href]) => link(label, href)))
+            ) : h('div', { className: 'case-study-content' },
+              h('ul', null, project.features.map(feature => h('li', { key: feature }, feature))),
+              paragraph('Architecture and scope', project.architecture),
+              link('Repository documentation', project.github + '#readme')
+            )
+          )
+        );
+      })),
+      h('aside', { className: 'production-results-note' },
+        h('strong', null, 'Professional results and public demos'),
+        h('p', null, 'The 7.5× reconciliation improvement is a reported result from my professional work: a 10M-record batch improved from 30 minutes to 4 minutes by moving matching from batch database queries to in-memory processing. Hardware specifications and repeatable benchmark artifacts are not published here. The projects above are separate personal implementations.'),
+        h('a', { href: 'ravi-singh-resume.pdf' }, 'See professional experience in my resume ↗')
+      )
+    )
+  );
 };
 _c = Projects;
 var _c;
@@ -42569,400 +41711,21 @@ var _jsxFileName = "/app/frontend/src/components/Skills.jsx";
 
 
 
+// Portfolio-specific MagicBento supplied by components/magic-bento/PortfolioBento.jsx.
+// The factory reuses this build's React instance.
 const Skills = () => {
-  const skillCategories = [{
-    key: 'backend',
-    title: 'Backend',
-    icon: lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"],
-    color: 'emerald'
-  }, {
-    key: 'cloud',
-    title: 'Cloud & Containers',
-    icon: lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"],
-    color: 'cyan'
-  }, {
-    key: 'devops',
-    title: 'DevOps & CI/CD',
-    icon: lucide_react__WEBPACK_IMPORTED_MODULE_7__["default"],
-    color: 'emerald'
-  }, {
-    key: 'databases',
-    title: 'Databases',
-    icon: lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"],
-    color: 'cyan'
-  }, {
-    key: 'messaging',
-    title: 'Messaging & Streaming',
-    icon: lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"],
-    color: 'emerald'
-  }, {
-    key: 'ai',
-    title: 'AI & Automation',
-    icon: lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"],
-    color: 'cyan'
-  }];
-  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)("section", {
-    id: "skills",
-    className: "py-20 bg-zinc-900",
-    "x-file-name": "Skills",
-    "x-line-number": "17",
-    "x-column": "4",
-    "x-component": "section",
-    "x-id": "Skills_17_4",
-    "x-dynamic": "false",
-    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)("div", {
-      className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
-      "x-file-name": "Skills",
-      "x-line-number": "18",
-      "x-column": "6",
-      "x-component": "div",
-      "x-id": "Skills_18_6",
-      "x-dynamic": "false",
-      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)("div", {
-        className: "text-center mb-16",
-        "x-file-name": "Skills",
-        "x-line-number": "19",
-        "x-column": "8",
-        "x-component": "div",
-        "x-id": "Skills_19_8",
-        "x-dynamic": "false",
-        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)("h2", {
-          className: "text-3xl sm:text-4xl lg:text-5xl font-bold mb-4",
-          "x-file-name": "Skills",
-          "x-line-number": "20",
-          "x-column": "10",
-          "x-component": "h2",
-          "x-id": "Skills_20_10",
-          "x-dynamic": "false",
-          children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)("span", {
-            className: "bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent",
-            "x-file-name": "Skills",
-            "x-line-number": "21",
-            "x-column": "12",
-            "x-component": "span",
-            "x-id": "Skills_21_12",
-            "x-dynamic": "false",
-            children: "Technical Skills"
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 21,
-            columnNumber: 13
-          }, undefined)
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 20,
-          columnNumber: 11
-        }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)("p", {
-          className: "text-zinc-400 text-lg max-w-3xl mx-auto",
-          "x-file-name": "Skills",
-          "x-line-number": "25",
-          "x-column": "10",
-          "x-component": "p",
-          "x-id": "Skills_25_10",
-          "x-dynamic": "false",
-          children: "Technologies used across production systems and public engineering projects"
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 25,
-          columnNumber: 11
-        }, undefined)]
-      }, void 0, true, {
-        fileName: _jsxFileName,
-        lineNumber: 19,
-        columnNumber: 9
-      }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)("div", {
-        className: "grid md:grid-cols-2 lg:grid-cols-3 gap-6",
-        "x-file-name": "Skills",
-        "x-line-number": "30",
-        "x-column": "8",
-        "x-component": "div",
-        "x-id": "Skills_30_8",
-        "x-dynamic": "true",
-        "x-source-type": "computed",
-        "x-source-editable": "false",
-        children: skillCategories.map(category => {
-          const Icon = category.icon;
-          const categorySkills = _mock__WEBPACK_IMPORTED_MODULE_8__.skills[category.key];
-          return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)(_ui_card__WEBPACK_IMPORTED_MODULE_1__.Card, {
-            className: "bg-gradient-to-br from-zinc-900/80 to-zinc-900/40 border-zinc-800/50 backdrop-blur-sm hover:border-emerald-500/30 transition-all duration-300 group",
-            "x-file-name": "Skills",
-            "x-line-number": "36",
-            "x-column": "14",
-            "x-component": "Card",
-            "x-id": "Skills_36_14",
-            "x-dynamic": "true",
-            "x-source-type": "static-imported",
-            "x-source-var": "skillCategories",
-            "x-source-file-abs": "/app/frontend/src/components/Skills.jsx",
-            "x-source-line": "7",
-            "x-source-editable": "true",
-            "x-array-var": "skillCategories",
-            "x-array-line": "7",
-            "x-array-item-param": "category",
-            children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)(_ui_card__WEBPACK_IMPORTED_MODULE_1__.CardHeader, {
-              "x-file-name": "Skills",
-              "x-line-number": "40",
-              "x-column": "16",
-              "x-component": "CardHeader",
-              "x-id": "Skills_40_16",
-              "x-dynamic": "true",
-              "x-source-type": "static-imported",
-              "x-source-var": "skillCategories",
-              "x-source-file-abs": "/app/frontend/src/components/Skills.jsx",
-              "x-source-line": "7",
-              "x-source-editable": "true",
-              "x-array-var": "skillCategories",
-              "x-array-line": "7",
-              "x-array-item-param": "category",
-              children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)(_ui_card__WEBPACK_IMPORTED_MODULE_1__.CardTitle, {
-                className: "flex items-center gap-3",
-                "x-file-name": "Skills",
-                "x-line-number": "41",
-                "x-column": "18",
-                "x-component": "CardTitle",
-                "x-id": "Skills_41_18",
-                "x-dynamic": "true",
-                "x-source-type": "static-imported",
-                "x-source-var": "skillCategories",
-                "x-source-file-abs": "/app/frontend/src/components/Skills.jsx",
-                "x-source-line": "7",
-                "x-source-editable": "true",
-                "x-array-var": "skillCategories",
-                "x-array-line": "7",
-                "x-array-item-param": "category",
-                children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)("div", {
-                  className: `p-2 bg-${category.color}-500/10 rounded-lg group-hover:bg-${category.color}-500/20 transition-colors duration-300`,
-                  "x-file-name": "Skills",
-                  "x-line-number": "42",
-                  "x-column": "20",
-                  "x-component": "div",
-                  "x-id": "Skills_42_20",
-                  "x-dynamic": "false",
-                  children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)(Icon, {
-                    className: `h-5 w-5 text-${category.color}-400`,
-                    "x-file-name": "Skills",
-                    "x-line-number": "43",
-                    "x-column": "22",
-                    "x-component": "Icon",
-                    "x-id": "Skills_43_22",
-                    "x-dynamic": "true",
-                    "x-source-type": "static-imported",
-                    "x-source-var": "skillCategories",
-                    "x-source-file-abs": "/app/frontend/src/components/Skills.jsx",
-                    "x-source-line": "7",
-                    "x-source-editable": "true",
-                    "x-array-var": "skillCategories",
-                    "x-array-line": "7",
-                    "x-array-item-param": "category"
-                  }, void 0, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 43,
-                    columnNumber: 23
-                  }, undefined)
-                }, void 0, false, {
-                  fileName: _jsxFileName,
-                  lineNumber: 42,
-                  columnNumber: 21
-                }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)("span", {
-                  className: "text-zinc-100",
-                  "x-file-name": "Skills",
-                  "x-line-number": "45",
-                  "x-column": "20",
-                  "x-component": "span",
-                  "x-id": "Skills_45_20",
-                  "x-dynamic": "true",
-                  "x-source-type": "static-imported",
-                  "x-source-var": "skillCategories",
-                  "x-source-file-abs": "/app/frontend/src/components/Skills.jsx",
-                  "x-source-line": "7",
-                  "x-source-path": "title",
-                  "x-source-editable": "true",
-                  "x-array-var": "skillCategories",
-                  "x-array-line": "7",
-                  "x-array-item-param": "category",
-                  children: category.title
-                }, void 0, false, {
-                  fileName: _jsxFileName,
-                  lineNumber: 45,
-                  columnNumber: 21
-                }, undefined)]
-              }, void 0, true, {
-                fileName: _jsxFileName,
-                lineNumber: 41,
-                columnNumber: 19
-              }, undefined)
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 40,
-              columnNumber: 17
-            }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)(_ui_card__WEBPACK_IMPORTED_MODULE_1__.CardContent, {
-              "x-file-name": "Skills",
-              "x-line-number": "48",
-              "x-column": "16",
-              "x-component": "CardContent",
-              "x-id": "Skills_48_16",
-              "x-dynamic": "true",
-              "x-excluded": "true",
-              "x-source-type": "static-imported",
-              "x-source-var": "skillCategories",
-              "x-source-file-abs": "/app/frontend/src/components/Skills.jsx",
-              "x-source-line": "7",
-              "x-source-editable": "true",
-              "x-array-var": "skillCategories",
-              "x-array-line": "7",
-              "x-array-item-param": "category",
-              children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)("div", {
-                className: "space-y-4",
-                "x-file-name": "Skills",
-                "x-line-number": "49",
-                "x-column": "18",
-                "x-component": "div",
-                "x-id": "Skills_49_18",
-                "x-dynamic": "true",
-                "x-source-type": "computed",
-                "x-source-editable": "false",
-                children: categorySkills.map((skill, index) => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)("div", {
-                  "x-file-name": "Skills",
-                  "x-line-number": "51",
-                  "x-column": "22",
-                  "x-component": "div",
-                  "x-id": "Skills_51_22",
-                  "x-dynamic": "false",
-                  children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)("div", {
-                    className: "flex justify-between items-center mb-2",
-                    "x-file-name": "Skills",
-                    "x-line-number": "52",
-                    "x-column": "24",
-                    "x-component": "div",
-                    "x-id": "Skills_52_24",
-                    "x-dynamic": "false",
-                    children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)("span", {
-                      className: "text-zinc-300 text-sm font-medium",
-                      "x-file-name": "Skills",
-                      "x-line-number": "53",
-                      "x-column": "26",
-                      "x-component": "span",
-                      "x-id": "Skills_53_26",
-                      "x-dynamic": "true",
-                      "x-source-type": "static-imported",
-                      "x-source-var": "categorySkills",
-                      "x-source-path": "name",
-                      "x-source-editable": "false",
-                      "x-array-var": "categorySkills",
-                      "x-array-item-param": "skill",
-                      children: skill.name
-                    }, void 0, false, {
-                      fileName: _jsxFileName,
-                      lineNumber: 53,
-                      columnNumber: 27
-                    }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)("span", {
-                      className: "text-emerald-400 text-xs font-semibold",
-                      "x-file-name": "Skills",
-                      "x-line-number": "54",
-                      "x-column": "26",
-                      "x-component": "span",
-                      "x-id": "Skills_54_26",
-                      "x-dynamic": "true",
-                      "x-source-type": "static-imported",
-                      "x-source-var": "categorySkills",
-                      "x-source-path": "level",
-                      "x-source-editable": "false",
-                      "x-array-var": "categorySkills",
-                      "x-array-item-param": "skill",
-                      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)("span", {
-                        "data-ve-dynamic": "true",
-                        "x-excluded": "true",
-                        style: {
-                          display: "contents"
-                        },
-                        "x-file-name": "Skills",
-                        "x-line-number": "54",
-                        "x-column": "26",
-                        "x-component": "span",
-                        "x-id": "Skills_54_26_expr0",
-                        "x-dynamic": "true",
-                        "x-source-type": "static-imported",
-                        "x-source-var": "categorySkills",
-                        "x-source-path": "level",
-                        "x-source-editable": "false",
-                        "x-array-var": "categorySkills",
-                        "x-array-item-param": "skill",
-                        children: skill.level
-                      }, void 0, false), "%"]
-                    }, void 0, true, {
-                      fileName: _jsxFileName,
-                      lineNumber: 54,
-                      columnNumber: 27
-                    }, undefined)]
-                  }, void 0, true, {
-                    fileName: _jsxFileName,
-                    lineNumber: 52,
-                    columnNumber: 25
-                  }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)("div", {
-                    className: "h-2 bg-zinc-800 rounded-full overflow-hidden",
-                    "x-file-name": "Skills",
-                    "x-line-number": "56",
-                    "x-column": "24",
-                    "x-component": "div",
-                    "x-id": "Skills_56_24",
-                    "x-dynamic": "false",
-                    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)("div", {
-                      className: `h-full bg-gradient-to-r from-${category.color}-500 to-${category.color}-400 rounded-full transition-all duration-1000 ease-out`,
-                      style: {
-                        width: `${skill.level}%`
-                      },
-                      "x-file-name": "Skills",
-                      "x-line-number": "57",
-                      "x-column": "26",
-                      "x-component": "div",
-                      "x-id": "Skills_57_26",
-                      "x-dynamic": "false"
-                    }, void 0, false, {
-                      fileName: _jsxFileName,
-                      lineNumber: 57,
-                      columnNumber: 27
-                    }, undefined)
-                  }, void 0, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 56,
-                    columnNumber: 25
-                  }, undefined)]
-                }, index, true, {
-                  fileName: _jsxFileName,
-                  lineNumber: 51,
-                  columnNumber: 23
-                }, undefined))
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 49,
-                columnNumber: 19
-              }, undefined)
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 48,
-              columnNumber: 17
-            }, undefined)]
-          }, category.key, true, {
-            fileName: _jsxFileName,
-            lineNumber: 36,
-            columnNumber: 15
-          }, undefined);
-        })
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 30,
-        columnNumber: 9
-      }, undefined)]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 7
-    }, undefined)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 17,
-    columnNumber: 5
-  }, undefined);
+  const React = react__WEBPACK_IMPORTED_MODULE_0__;
+  const h = React.createElement;
+  const Bento = React.useMemo(() => window.createPortfolioBento(React), []);
+  return h('section', { id: 'skills', className: 'py-20 expertise-section', 'aria-labelledby': 'skills-heading' },
+    h('div', { className: 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8' },
+      h('div', { className: 'expertise-heading' },
+        h('h2', { id: 'skills-heading' }, 'Technical Skills'),
+        h('p', null, 'The tools I work with. The engineering outcomes behind them.')
+      ),
+      h(Bento)
+    )
+  );
 };
 _c = Skills;
 var _c;
@@ -44021,9 +42784,9 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/r
 
 const personalInfo = {
   name: "Ravi Singh",
-  title: "Senior Java Engineer & Tech Lead",
+  title: "Senior Java Backend Engineer & Tech Lead",
   subtitle: "FinTech & Payments | PCI-DSS Security | Multi-Cloud Platforms",
-  bio: "Java backend engineer with 9+ years in fintech, reconciliation, core banking, and payment security. I build high-volume systems, lead production delivery for banking clients, and turn complex workflows into measurable performance gains.",
+  bio: "I build secure payment and banking services with Java and Spring Boot. With 9+ years in fintech, I lead backend delivery across reconciliation, payment security, and cloud platforms.",
   email: "ravi.ai.code@gmail.com",
   github: "https://github.com/raviaicode",
   linkedin: "https://www.linkedin.com/in/ravi-singh-fintech/",
@@ -44123,10 +42886,21 @@ const skills = {
   }]
 };
 const projects = [{
+  id: 5,
+  title: "AI Incident Copilot",
+  status: "In development · Phase 2 implemented",
+  description: "A tenant-aware microservice workflow with connected logs, metrics, and traces. Investigation agents, operational RAG, and approved remediation are planned.",
+  tech: ["Java 21", "Spring Boot 3", "Apache Kafka", "PostgreSQL", "Redis", "OpenTelemetry", "Grafana", "Docker Compose"],
+  features: ["Tenant and correlation context across HTTP and Kafka", "Idempotent payment and notification consumers", "Structured logs, service metrics, and distributed traces", "Prometheus, Tempo, OpenSearch, and Grafana integration"],
+  architecture: "Four Spring Boot services exchange Kafka events with tenant-scoped persistence. OpenTelemetry exports traces to Tempo, Prometheus collects metrics, and Fluent Bit sends logs to OpenSearch. Grafana brings the evidence together. Agentic investigation and operational RAG remain on the roadmap.",
+  github: "https://github.com/raviaicode/ai-incident-copilot",
+  demo: ""
+}, {
   id: 1,
   title: "NeoPay — Event-Driven Payments",
-  description: "A hands-on fintech system that demonstrates a resilient order-to-payment workflow across independently deployable Spring Boot services. Kafka carries each business event, PostgreSQL persists service-owned state, and Docker Compose brings the complete stack up locally.",
-  tech: ["Java 21", "Spring Boot 3", "Apache Kafka", "PostgreSQL", "Docker Compose", "Liquibase"],
+  status: "Learning demo · local workflow",
+  description: "A local learning demo of Kafka-based order, payment, and notification services, with duplicate-event handling, retries, and dead-letter routing.",
+  tech: ["Java 17", "Spring Boot 3", "Apache Kafka", "PostgreSQL", "Docker Compose", "Liquibase"],
   features: ["Order → payment → notification choreography", "Idempotent payment event processing", "Retry handling with dead-letter topics", "Integration tests and an automated smoke test"],
   architecture: "Three-service event-driven choreography: the Order service publishes OrderCreated, the Payment service processes each event idempotently and publishes PaymentProcessed, and the Notification service consumes the result. Correlation IDs provide end-to-end traceability, while retry and dead-letter paths isolate transient and poison-message failures.",
   github: "https://github.com/raviaicode/neopay",
@@ -44134,7 +42908,8 @@ const projects = [{
 }, {
   id: 2,
   title: "UPI-Sim",
-  description: "Production-inspired UPI-style P2P payment simulator demonstrating double-entry ledger, idempotent transfers, ACID transactions, concurrency control, and secure REST APIs.",
+  status: "Backend prototype · validation pending",
+  description: "A simulated P2P payment backend exploring balanced ledgers, repeat requests, and concurrent wallet updates. Test scenarios are included; validation is pending.",
   tech: ["Java 21", "Spring Boot 3", "PostgreSQL", "Spring Security", "JWT", "Testcontainers"],
   features: ["Double-entry bookkeeping", "Idempotent transfers with clientRef", "Pessimistic locking", "Money as integer minor units (paise)"],
   architecture: "Monolithic Spring Boot app with pessimistic locking, deterministic wallet ordering, and Flyway migrations",
@@ -44143,28 +42918,21 @@ const projects = [{
 }, {
   id: 3,
   title: "Hyrva",
-  description: "Cloud HR + payroll application with AI assistants. Features payroll engine, time & attendance, event-driven architecture, and two AI assistants: AskHR (read-only) and Workforce AI (action-taking).",
+  status: "Personal project · HR + AI",
+  description: "An HR and payroll project combining workforce workflows with read-only and action-oriented AI assistants.",
   tech: ["Java", "Spring Boot", "React", "Claude AI", "H2", "Vite"],
   features: ["Payroll engine with gross-to-net computation", "Time & attendance tracking", "Event-driven module communication", "AI-powered HR assistants"],
   architecture: "Modular monolith with event bus, shared agent framework, and multi-turn AI chat integration",
   github: "https://github.com/raviaicode/hyrva",
   demo: ""
-}, {
-  id: 4,
-  title: "NeoCore.ai",
-  description: "Personal portfolio website showcasing modern web development with clean design, animated SVG backgrounds, and responsive layout.",
-  tech: ["JavaScript", "HTML/CSS", "SVG Animation", "React"],
-  features: ["Animated SVG background", "Responsive design", "Dark theme", "Smooth scroll navigation"],
-  architecture: "Static site with React SPA and custom SVG animations",
-  github: "https://github.com/raviaicode/neocore.ai",
-  demo: "https://raviaicode.github.io/neocore.ai/"
+
 }];
 const experience = [{
   id: 1,
   company: "Osfin",
   role: "Senior Software Engineer (Tech Lead)",
   period: "April 2023 - Present",
-  description: "Leading a 9-engineer cross-functional team and serving as Tech Owner for 2-3 banking clients across reconciliation, payment security, multi-cloud deployments, and production operations.",
+  description: "Leading a 6-engineer cross-functional team and serving as Tech Owner for 2-3 banking clients across reconciliation, payment security, multi-cloud deployments, and production operations.",
   achievements: ["Architected a PCI-DSS Level 1 tokenization engine processing 50M+ card transactions", "Re-engineered 10M-record reconciliation from 30 minutes to 4 minutes - a 7.5x speedup", "Delivered cryptographic key rotation for 10M cards in under 1 minute across OCI, AWS, GCP, and Azure", "Achieved 99.5%+ auto-match accuracy and reduced manual reconciliation effort by 70%"]
 }, {
   id: 2,
@@ -44237,7 +43005,7 @@ const stats = [{
   label: "Years in FinTech",
   value: "9+"
 }, {
-  label: "Cards Tokenized",
+  label: "Card Transactions Secured",
   value: "50M+"
 }, {
   label: "Faster Reconciliation",
